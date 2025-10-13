@@ -280,6 +280,36 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
 
 
 ####
+<div style="width:100%; overflow:auto; border:1px solid #ddd; max-height:600px;">
+  <table style="min-width:1600px; border-collapse:collapse; font-size:12px; text-align:center;">
+    <thead>
+      <tr>
+        <th>N<sub>A</sub></th>
+        <th>R<sub>f</sub></th>
+        <th>Map</th>
+        <th>CP<sub>m</sub> B-PP</th>
+        <th>CP<sub>m</sub> B-WF</th>
+        <th>CP<sub>m</sub> FSP-QT</th>
+        <th>CP<sub>m</sub> FSP-G</th>
+        <th>CP<sub>m</sub> FSP</th>
+        <th>F1 B-PP</th>
+        <th>F1 B-WF</th>
+        <th>F1 FSP-QT</th>
+        <th>F1 FSP-G</th>
+        <th>F1 FSP</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2</td><td>5</td><td><i>house_tilted</i></td>
+        <td>88.37</td><td>92.24</td><td>59.55</td><td>73.12</td><td>84.66</td>
+        <td>97.55</td><td>97.57</td><td>96.54</td><td>95.69</td><td>95.57</td>
+      </tr>
+      <tr>
+        <td>2</td><td>5</td><td><i>office_tilted</i></td>
+        <td>65.95</td><td>84.82</td><td>44.70</td><td>63.11</td><td>42.49</td>
+        <td>98.25</td><td>97.55</td><td>97.89</td><td>97.70</td><td>97.50</td>
+      </tr>
 <div style="max-height:520px; overflow:auto; border:1px solid #ddd; margin:16px 0;">
 <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; width:100%; min-width:1200px; font-size:12px; text-align:center;">
   <caption><b>Effect of R<sub>f</sub> on CP<sub>m</sub> and F1 across environments (f<sub>e</sub>=0, T<sub>spawn</sub>=0)</b></caption>
@@ -340,7 +370,11 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
 <p style="font-size:12px; margin-top:-8px;">
   <i>Note.</i> Standard deviations: 0.04–1.19 for CP<sub>m</sub> and 0.09–0.33 for F1.
 </p>
+</tbody>
+  </table>
+</div>
 
+<p style="font-size:12px"><i>Note:</i> Use horizontal scroll to view the full table.</p>
 
 
 
