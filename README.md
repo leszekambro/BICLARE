@@ -9,15 +9,15 @@ Each environment is characterized by different spatial features and complexity, 
 ## Six Virtual Environments
 
 <p align="center">
-  <img src="Figures/experiments/maps/house_map.png" width="30%" />
-  <img src="Figures/experiments/maps/house_tilted_map.png" width="30%" />
-  <img src="Figures/experiments/maps/office_map.png" width="30%" />
+  <img src="experiments/maps/house_map.png" width="30%" />
+  <img src="experiments/maps/house_tilted_map.png" width="30%" />
+  <img src="experiments/maps/office_map.png" width="30%" />
 </p>
 
 <p align="center">
-  <img src="Figures/experiments/maps/office_tilted_map.png" width="30%" />
-  <img src="Figures/experiments/maps/museum_map.png" width="30%" />
-  <img src="Figures/experiments/maps/museum_tilted_map.png" width="30%" />
+  <img src="experiments/maps/office_tilted_map.png" width="30%" />
+  <img src="experiments/maps/museum_map.png" width="30%" />
+  <img src="experiments/maps/museum_tilted_map.png" width="30%" />
 </p>
 
 <p align="center"><em>Figure 1: Six virtual maps used for performance evaluation of the BICLARE algorithm.</em></p>
