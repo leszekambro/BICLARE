@@ -144,14 +144,14 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
 ###############
 <div style="display:flex; gap:12px; align-items:flex-start; justify-content:center; flex-wrap:wrap;">
   <figure style="margin:0; text-align:center; flex:1 1 300px; max-width:33%;">
-    <a href="Figures/results/noise/alg_comp/house_tilted_15_agents_noise_0_comparison_histogram.png">
+    <a href="results/noise/alg_comp/house_tilted_15_agents_noise_0_comparison_histogram.png">
       <img src="results/noise/alg_comp/house_tilted_15_agents_noise_0_comparison_histogram.png" alt="house_tilted, N_A=15, f_e=0" style="max-width:100%; height:auto; display:block;" />
     </a>
     <figcaption style="font-size:0.9em;">house_tilted, N<sub>A</sub>=15, f<sub>e</sub>=0</figcaption>
   </figure>
 
   <figure style="margin:0; text-align:center; flex:1 1 300px; max-width:33%;">
-    <a href="Figures/results/noise/alg_comp/office_4_agents_noise_0_comparison_histogram.png">
+    <a href="results/noise/alg_comp/office_4_agents_noise_0_comparison_histogram.png">
       <img src="results/noise/alg_comp/office_4_agents_noise_0_comparison_histogram.png" alt="office, N_A=4, f_e=0" style="max-width:100%; height:auto; display:block;" />
     </a>
     <figcaption style="font-size:0.9em;">office, N<sub>A</sub>=4, f<sub>e</sub>=0</figcaption>
@@ -159,7 +159,7 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
 
   <figure style="margin:0; text-align:center; flex:1 1 300px; max-width:33%;">
     <a href="results/noise/alg_comp/museum_tilted_6_agents_noise_1_comparison_histogram.png">
-      <img src="Figures/results/noise/alg_comp/museum_tilted_6_agents_noise_1_comparison_histogram.png" alt="museum_tilted, N_A=6, f_e=1" style="max-width:100%; height:auto; display:block;" />
+      <img src="results/noise/alg_comp/museum_tilted_6_agents_noise_1_comparison_histogram.png" alt="museum_tilted, N_A=6, f_e=1" style="max-width:100%; height:auto; display:block;" />
     </a>
     <figcaption style="font-size:0.9em;">museum_tilted, N<sub>A</sub>=6, f<sub>e</sub>=1</figcaption>
   </figure>
