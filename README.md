@@ -84,3 +84,25 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
 <p><b>Figure:</b> Orientation error heatmaps <i>M<sub>θ</sub></i> for different environments.</p>
 
 
+<h3>Dynamic Obstacles and Agent Deployment</h3>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+
+  <div style="text-align: center;">
+    <img src="experiments/arenas_spawn_boxes/house_arena_with_spawn_boxes.png" width="280" alt="House arena">
+    <p><b>House</b></p>
+  </div>
+
+  <div style="text-align: center;">
+    <img src="experiments/arenas_spawn_boxes/office_arena_with_spawn_boxes.png" width="280" alt="Office arena">
+    <p><b>Office</b></p>
+  </div>
+
+  <div style="text-align: center;">
+    <img src="experiments/arenas_spawn_boxes/museum_arena_with_spawn_boxes.png" width="280" alt="Museum arena">
+    <p><b>Museum</b></p>
+  </div>
+
+</div>
+
+<p><b>Figure:</b> Dynamic obstacles with spawn order (red) and agent deployment positions (blue) in each map.</p>
