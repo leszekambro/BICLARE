@@ -300,41 +300,28 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
       </tr>
     </thead>
     <tbody>
-      <!-- N_A = 2 -->
       <tr><td>2</td><td>5</td><td><i>house_tilted</i></td><td>88.37</td><td>92.24</td><td>59.55</td><td>73.12</td><td>84.66</td><td>97.55</td><td>97.57</td><td>96.54</td><td>95.69</td><td>95.57</td></tr>
       <tr><td>2</td><td>5</td><td><i>office_tilted</i></td><td>65.95</td><td>84.82</td><td>44.70</td><td>63.11</td><td>42.49</td><td>98.25</td><td>97.55</td><td>97.89</td><td>97.70</td><td>97.50</td></tr>
       <tr><td>2</td><td>5</td><td><i>museum_tilted</i></td><td>32.31</td><td>52.07</td><td>13.79</td><td>41.87</td><td>44.05</td><td>97.95</td><td>97.11</td><td>97.62</td><td>97.90</td><td>98.10</td></tr>
       <tr><td>2</td><td>15</td><td><i>house_tilted</i></td><td>83.42</td><td>87.92</td><td>52.88</td><td>77.41</td><td>84.52</td><td>97.49</td><td>97.26</td><td>97.05</td><td>95.65</td><td>95.59</td></tr>
       <tr><td>2</td><td>15</td><td><i>office_tilted</i></td><td>65.22</td><td>86.01</td><td>49.79</td><td>59.01</td><td>41.32</td><td>98.25</td><td>97.79</td><td>97.47</td><td>97.58</td><td>97.62</td></tr>
       <tr><td>2</td><td>15</td><td><i>museum_tilted</i></td><td>41.58</td><td>52.23</td><td>13.50</td><td>40.68</td><td>38.65</td><td>98.33</td><td>97.25</td><td>97.88</td><td>98.02</td><td>98.11</td></tr>
-      <tr><td>2</td><td>&infin;</td><td><i>house_tilted</i></td><td>83.42</td><td>87.92</td><td>52.88</td><td>77.41</td><td>84.52</td><td>97.49</td><td>97.26</td><td>97.05</td><td>95.65</td><td>95.59</td></tr>
-      <tr><td>2</td><td>&infin;</td><td><i>office_tilted</i></td><td>65.93</td><td>85.98</td><td>49.20</td><td>59.01</td><td>41.32</td><td>98.22</td><td>97.73</td><td>97.60</td><td>97.58</td><td>97.62</td></tr>
-      <tr><td>2</td><td>&infin;</td><td><i>museum_tilted</i></td><td>33.68</td><td>51.60</td><td>13.50</td><td>40.68</td><td>38.65</td><td>98.08</td><td>97.36</td><td>97.88</td><td>98.02</td><td>98.11</td></tr>
-
-      <!-- N_A = 6 -->
       <tr><td>6</td><td>5</td><td><i>house_tilted</i></td><td>98.32</td><td>94.59</td><td>78.87</td><td>76.84</td><td>98.75</td><td>98.22</td><td>97.96</td><td>97.30</td><td>95.29</td><td>95.44</td></tr>
       <tr><td>6</td><td>5</td><td><i>office_tilted</i></td><td>90.86</td><td>97.79</td><td>64.18</td><td>79.30</td><td>78.94</td><td>98.47</td><td>98.27</td><td>98.01</td><td>97.33</td><td>97.36</td></tr>
       <tr><td>6</td><td>5</td><td><i>museum_tilted</i></td><td>67.37</td><td>67.87</td><td>33.87</td><td>58.15</td><td>80.16</td><td>98.50</td><td>97.68</td><td>97.42</td><td>97.88</td><td>97.59</td></tr>
       <tr><td>6</td><td>15</td><td><i>house_tilted</i></td><td>98.78</td><td>98.65</td><td>78.20</td><td>77.96</td><td>98.56</td><td>98.26</td><td>97.97</td><td>97.16</td><td>95.44</td><td>95.39</td></tr>
       <tr><td>6</td><td>15</td><td><i>office_tilted</i></td><td>89.55</td><td>96.67</td><td>61.77</td><td>87.72</td><td>82.69</td><td>98.34</td><td>98.33</td><td>98.08</td><td>97.28</td><td>97.20</td></tr>
       <tr><td>6</td><td>15</td><td><i>museum_tilted</i></td><td>70.58</td><td>91.14</td><td>30.41</td><td>65.81</td><td>86.70</td><td>98.37</td><td>97.74</td><td>97.80</td><td>97.67</td><td>97.45</td></tr>
-      <tr><td>6</td><td>&infin;</td><td><i>house_tilted</i></td><td>98.78</td><td>98.65</td><td>78.20</td><td>77.96</td><td>98.56</td><td>98.26</td><td>97.97</td><td>97.16</td><td>95.44</td><td>95.39</td></tr>
-      <tr><td>6</td><td>&infin;</td><td><i>office_tilted</i></td><td>90.77</td><td>97.12</td><td>61.81</td><td>87.72</td><td>82.69</td><td>98.31</td><td>98.36</td><td>98.02</td><td>97.28</td><td>97.20</td></tr>
-      <tr><td>6</td><td>&infin;</td><td><i>museum_tilted</i></td><td>68.03</td><td>88.99</td><td>32.54</td><td>65.51</td><td>85.08</td><td>98.45</td><td>97.92</td><td>97.81</td><td>97.69</td><td>97.49</td></tr>
-
-      <!-- N_A = 15 -->
       <tr><td>15</td><td>5</td><td><i>house_tilted</i></td><td>99.14</td><td>98.90</td><td>93.05</td><td>99.32</td><td>98.49</td><td>98.52</td><td>97.92</td><td>97.53</td><td>95.29</td><td>95.58</td></tr>
       <tr><td>15</td><td>5</td><td><i>office_tilted</i></td><td>96.84</td><td>97.82</td><td>81.27</td><td>97.64</td><td>97.73</td><td>98.48</td><td>98.53</td><td>98.36</td><td>97.03</td><td>97.02</td></tr>
       <tr><td>15</td><td>5</td><td><i>museum_tilted</i></td><td>93.96</td><td>95.76</td><td>65.52</td><td>91.61</td><td>99.17</td><td>98.63</td><td>98.03</td><td>98.11</td><td>97.33</td><td>97.24</td></tr>
       <tr><td>15</td><td>15</td><td><i>house_tilted</i></td><td>99.14</td><td>98.88</td><td>89.75</td><td>98.81</td><td>98.32</td><td>98.56</td><td>97.74</td><td>97.46</td><td>95.52</td><td>95.60</td></tr>
       <tr><td>15</td><td>15</td><td><i>office_tilted</i></td><td>98.04</td><td>97.87</td><td>78.35</td><td>97.79</td><td>98.32</td><td>98.52</td><td>98.43</td><td>98.05</td><td>96.99</td><td>97.01</td></tr>
       <tr><td>15</td><td>15</td><td><i>museum_tilted</i></td><td>92.90</td><td>96.92</td><td>50.17</td><td>92.80</td><td>99.72</td><td>98.68</td><td>98.18</td><td>97.48</td><td>97.33</td><td>97.22</td></tr>
-      <tr><td>15</td><td>&infin;</td><td><i>house_tilted</i></td><td>99.14</td><td>98.88</td><td>89.75</td><td>98.81</td><td>98.32</td><td>98.56</td><td>97.74</td><td>97.46</td><td>95.52</td><td>95.60</td></tr>
-      <tr><td>15</td><td>&infin;</td><td><i>office_tilted</i></td><td>98.05</td><td>98.00</td><td>73.65</td><td>97.79</td><td>98.32</td><td>98.54</td><td>98.46</td><td>98.17</td><td>96.99</td><td>97.01</td></tr>
-      <tr><td>15</td><td>&infin;</td><td><i>museum_tilted</i></td><td>96.63</td><td>97.63</td><td>49.50</td><td>93.00</td><td>99.48</td><td>98.68</td><td>98.11</td><td>97.53</td><td>97.34</td><td>97.28</td></tr>
     </tbody>
   </table>
 </div>
+
 
 
 
