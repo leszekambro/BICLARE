@@ -32,7 +32,8 @@ This page presents additional companion material for ...
     <th>Museum</th>
   </tr>
   <tr>
-    <td><img src="experiments/heatmaps/error_heatmap_office.png" width="250"></td>
+    <td><img src="experiments/heatmaps/error_heatmap_house.png" width="250"></td>
+     <td><img src="experiments/heatmaps/error_heatmap_office.png" width="250"></td>
     <td><img src="experiments/heatmaps/error_heatmap_museum.png" width="250"></td>
   </tr>
 </table>
