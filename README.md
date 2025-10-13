@@ -106,3 +106,36 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
 </div>
 
 <p><b>Figure:</b> Dynamic obstacles with spawn order (red) and agent deployment positions (blue) in each map.</p>
+
+<h3>Examples of Generated Maps (for <i>f<sub>e</sub> = 1.5</i>)</h3>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+
+  <div style="text-align: center; width: 30%;">
+    <img src="Figures/results/map_plots/quadtree_map_relayed_pipuck2_house_tilted_n_1.5_tspawn_0_2_agents_s5.csv.png" 
+         alt="House tilted map" style="width:100%; border:1px solid #ccc; border-radius:6px;">
+    <p><b>House_tilted</b><br>
+    <i>N<sub>A</sub>=2</i>, <i>T<sub>spawn</sub>=0</i><br>
+    F<sub>1</sub>=87.2%, CP<sub>m</sub>=78.9%</p>
+  </div>
+
+  <div style="text-align: center; width: 30%;">
+    <img src="Figures/results/map_plots/quadtree_map_relayed_pipuck4_office_tilted_n_1.5_st_180_6_agents_s1.csv.png" 
+         alt="Office map" style="width:100%; border:1px solid #ccc; border-radius:6px;">
+    <p><b>Office</b><br>
+    <i>N<sub>A</sub>=6</i>, <i>T<sub>spawn</sub>=180</i><br>
+    F<sub>1</sub>=88.8%, CP<sub>m</sub>=91.9%</p>
+  </div>
+
+  <div style="text-align: center; width: 30%;">
+    <img src="Figures/results/map_plots/quadtree_map_relayed_pipuck1_museum_tilted_n_1.5_st_100_s1_15_agents.csv.png" 
+         alt="Museum tilted map" style="width:100%; border:1px solid #ccc; border-radius:6px;">
+    <p><b>Museum_tilted</b><br>
+    <i>N<sub>A</sub>=15</i>, <i>T<sub>spawn</sub>=100</i><br>
+    F<sub>1</sub>=89.6%, CP<sub>m</sub>=99.8%</p>
+  </div>
+
+</div>
+
+<p><b>Figure:</b> Examples of generated maps from experiments with <i>f<sub>e</sub> = 1.5</i>.</p>
+
