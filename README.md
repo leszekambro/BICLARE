@@ -1,12 +1,12 @@
 # BICLARE
-# Virtual Maps Showcase
+# Virtual Maps
 
 This page presents example virtual maps used in the evaluation of the **BICLARE** exploration algorithm.  
 Each environment is characterized by different spatial features and complexity, allowing performance benchmarking under diverse conditions.
 
 ---
 
-## 🗺️ Six Virtual Environments
+## Six Virtual Environments
 
 <p align="center">
   <img src="Figures/experiments/maps/house_map.png" width="30%" />
