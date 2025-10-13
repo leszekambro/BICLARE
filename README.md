@@ -60,5 +60,27 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
 
 <p><b>Figure 2.</b> Localization error direction heatmaps <i>M<sub>dir</sub></i>.</p>
 
+<h3>Orientation Error Heatmaps <i>M<sub>θ</sub></i></h3>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+
+  <div style="text-align: center;">
+    <img src="experiments/heatmaps/error_orientation_heatmap_house.png" width="300" alt="House heatmap">
+    <p><b>House</b></p>
+  </div>
+
+  <div style="text-align: center;">
+    <img src="experiments/heatmaps/error_orientation_heatmap_office.png" width="300" alt="Office heatmap">
+    <p><b>Office</b></p>
+  </div>
+
+  <div style="text-align: center;">
+    <img src="experiments/heatmaps/error_orientation_heatmap_museum.png" width="300" alt="Museum heatmap">
+    <p><b>Museum</b></p>
+  </div>
+
+</div>
+
+<p><b>Figure:</b> Orientation error heatmaps <i>M<sub>θ</sub></i> for different environments.</p>
 
 
