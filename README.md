@@ -280,6 +280,110 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
 
 
 
+<h3 id="performance-metrics">Performance Metrics</h3>
+<p>
+All experiments were repeated 5 times, with random seeds 1–5, and the average of each metric was taken over all repetitions. While their deployment position was constant, each agent’s deployment orientation was randomized for each repetition.
+We ran experiments with varying swarm sizes \(N_A\) of 2, 4, 6, 10, and 15 agents.
+</p>
+
+<h4 id="coverage-metrics">Coverage Metrics</h4>
+<p>
+Coverage is a significant metric for exploration. The coverage percentage \(CP(t)\) at time \(t\) is defined as:
+</p>
+
+$$
+CP(t) \;=\; \frac{N_{cc}(t)\,\rho^2}{AA}
+$$
+
+<p>
+where \(N_{cc}(t)\) is the number of covered cells in the agent’s map. Note that when there are pose estimation or distance sensor inaccuracies, cells outside the map borders or in \(IA\) might be added to an agent’s map. These are counted towards \(N_{cc}\). Cells merged by our algorithm are divided into cells of size \(\rho\).
+</p>
+
+<p>
+We also compare the coverage metric of the final gathered map from the agent, in which we ignore cells outside the arena and in \(IA\):
+</p>
+
+$$
+CP_m \;=\; \frac{N_{mc}\,\rho^2}{AA}
+$$
+
+<p>
+where \(N_{mc}\) is the number of covered cells inside the map boundaries and outside \(IA\) in the map.
+</p>
+
+<p>
+To compare which configuration results in the fastest increase in coverage, we also include the average coverage percentage during the mission, \(ACP\):
+</p>
+
+$$
+ACP \;=\; \frac{\sum_{t=0}^{T_{\mathrm{end}}} CP(t)}{T_{\mathrm{end}}}
+$$
+
+<p>
+As officially FSP considers cells with fully evaporated pheromones uncovered, we include previously covered but evaporated pheromone-cells in \(N_{cc}\) for a fair comparison.
+</p>
+
+<h4 id="confidence-metrics">Confidence Metrics</h4>
+<p>
+For BICLARE it is interesting to observe the average certainty at time \(t\), \(AC(t)=\left|\varphi(z,t)-0.5\right|\).
+To compare which configuration can ensure the highest overall certainty, we define the mean average certainty during the entire mission:
+</p>
+
+$$
+AAC \;=\; \frac{\sum_{t=0}^{T_{\mathrm{end}}} AC(t)}{T_{\mathrm{end}}}
+$$
+
+<h4 id="mapping-accuracy">Mapping accuracy</h4>
+<p>
+To evaluate the accuracy of the created maps, we use the precision and recall metrics. Here, we define cell \(z\) in a generated map to be an obstacle cell if \(\varphi(z,t)<0.5\), and free if \(\varphi(z,t)\ge 0.5\).
+Splitting the actual map up in cells of size \(\rho\), we define cells to be truly occupied when obstacles cover 10\% of their area.
+Given the number of correctly identified obstacle cells \(TP\), falsely identified obstacle cells \(FP\), and falsely identified free cells \(FN\):
+</p>
+
+$$
+\text{precision} \;=\; \frac{TP}{TP + FP}
+$$
+
+<p>and</p>
+
+$$
+\text{recall} \;=\; \frac{TP}{TP + FN}
+$$
+
+<p>
+To determine \(TP\), \(FP\), and \(FN\), only cells in \(N_{cc}\) that were at any point reachable during the experiment are considered.
+To get a more general impression of the accuracy of the created map for comparison between algorithms, we use the \(F_1\)-score, which is the harmonic mean of precision and recall:
+</p>
+
+$$
+F_1 \;=\; \frac{2 \cdot \text{precision} \cdot \text{recall}}{\text{precision} + \text{recall}}
+$$
+
+<p>
+For each experiment, we take the map of the agent who finished first \((S_i = 4)\), at its finish time.
+</p>
+
+<h4 id="obstacle-avoidance">Obstacle avoidance</h4>
+<p>
+We report the number of agent–obstacle collisions and the number of inter-agent collisions. The former shows the average collisions with static or dynamic obstacles per agent. The latter is also shown on average per agent, meaning that two agents colliding is one inter-agent collision per agent.
+</p>
+
+<h4 id="efficiency">Efficiency</h4>
+<p>
+To determine the efficiency of our algorithm, we compare the total travelled path and estimated battery usage by each agent throughout the mission. The battery estimation is based on the estimated power drawn by the motors and from sending and exchanging messages.
+We also track the distribution of observations throughout the map by counting the number of times each cell is observed. One observation of a cell is defined as a sensor ray crossing or being intersected in that cell.
+To determine the memory efficiency of our quadtree, we compare the number of quadtree nodes with the number of cells in the map if it were a matrix.
+</p>
+
+<h4 id="return-rate">Return rate</h4>
+<p>
+We report the number of swarm agents that successfully returned to the deployment site.
+We define a successful return for agent \(A_i\) when \(\left\lVert p_i - p_{i,t_0} \right\rVert < 2\,\text{m}\).
+</p>
+
+
+
+
 
 
 
