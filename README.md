@@ -143,56 +143,19 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
 
 
 
-<style>
-  .table-container {
-    max-height: 600px; /* wysokość przewijanego okna – możesz zmienić np. na 500px */
-    overflow: auto;
-    border: 1px solid #ddd;
-    margin: 20px 0;
-  }
-
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    font-size: 12px;
-    min-width: 1000px; /* wymusza poziomy scrollbar jeśli ekran jest wąski */
-  }
-  th, td {
-    border: 1px solid #ccc;
-    padding: 4px 6px;
-    text-align: center;
-  }
-  th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-    position: sticky;
-    top: 0; /* nagłówek będzie „przyklejony” przy przewijaniu w pionie */
-    background-clip: padding-box;
-    z-index: 2;
-  }
-  caption {
-    caption-side: top;
-    font-weight: bold;
-    margin-bottom: 6px;
-  }
-  tr:nth-child(even) {
-    background-color: #fafafa;
-  }
-  .bold { font-weight: bold; }
-  i { font-style: italic; }
-</style>
-
-<div class="table-container">
-<table>
-  <caption>Performance of different algorithms across all maps and swarm sizes, for <i>f<sub>e</sub>=0</i></caption>
+<div style="max-height:600px; overflow:auto; border:1px solid #ddd; margin:16px 0;">
+<table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; width:100%; min-width:1000px; font-size:12px;">
+  <caption><b>Performance of different algorithms across all maps and swarm sizes, for <i>f<sub>e</sub>=0</i></b></caption>
   <thead>
     <tr>
-      <th rowspan="2">Map</th>
-      <th rowspan="2">N<sub>A</sub></th>
+      <th>Map</th>
+      <th>N<sub>A</sub></th>
       <th colspan="5">ACP</th>
       <th colspan="3">AAC</th>
     </tr>
     <tr>
+      <th></th>
+      <th></th>
       <th>BICLARE-PP</th>
       <th>BICLARE-WF</th>
       <th>FSP-QT</th>
@@ -205,49 +168,50 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
   </thead>
   <tbody>
     <!-- house -->
-    <tr><td rowspan="5"><i>house</i></td><td>2</td><td class="bold">69.40</td><td>66.68</td><td>49.12</td><td>61.19</td><td>61.68</td><td class="bold">0.2023</td><td>0.2001</td><td>0.1543</td></tr>
-    <tr><td>4</td><td class="bold">82.74</td><td>78.30</td><td>68.23</td><td>70.00</td><td>69.33</td><td class="bold">0.2450</td><td>0.2259</td><td>0.1849</td></tr>
-    <tr><td>6</td><td class="bold">84.78</td><td>84.41</td><td>75.09</td><td>75.77</td><td>77.05</td><td class="bold">0.2733</td><td>0.2420</td><td>0.1977</td></tr>
-    <tr><td>10</td><td>84.65</td><td>85.67</td><td>80.47</td><td>84.49</td><td class="bold">86.71</td><td class="bold">0.3053</td><td>0.2769</td><td>0.2551</td></tr>
-    <tr><td>15</td><td class="bold">88.73</td><td>87.77</td><td>84.56</td><td>85.44</td><td>87.47</td><td class="bold">0.3203</td><td>0.2896</td><td>0.2812</td></tr>
+    <tr><td><i>house</i></td><td>2</td><td><b>69.40</b></td><td>66.68</td><td>49.12</td><td>61.19</td><td>61.68</td><td><b>0.2023</b></td><td>0.2001</td><td>0.1543</td></tr>
+    <tr><td><i>house</i></td><td>4</td><td><b>82.74</b></td><td>78.30</td><td>68.23</td><td>70.00</td><td>69.33</td><td><b>0.2450</b></td><td>0.2259</td><td>0.1849</td></tr>
+    <tr><td><i>house</i></td><td>6</td><td><b>84.78</b></td><td>84.41</td><td>75.09</td><td>75.77</td><td>77.05</td><td><b>0.2733</b></td><td>0.2420</td><td>0.1977</td></tr>
+    <tr><td><i>house</i></td><td>10</td><td>84.65</td><td>85.67</td><td>80.47</td><td>84.49</td><td><b>86.71</b></td><td><b>0.3053</b></td><td>0.2769</td><td>0.2551</td></tr>
+    <tr><td><i>house</i></td><td>15</td><td><b>88.73</b></td><td>87.77</td><td>84.56</td><td>85.44</td><td>87.47</td><td><b>0.3203</b></td><td>0.2896</td><td>0.2812</td></tr>
 
     <!-- house_tilted -->
-    <tr><td rowspan="5"><i>house_tilted</i></td><td>2</td><td>61.01</td><td class="bold">69.86</td><td>43.69</td><td>56.87</td><td>63.91</td><td class="bold">0.2145</td><td>0.2002</td><td>0.1979</td></tr>
-    <tr><td>4</td><td>75.80</td><td class="bold">79.37</td><td>56.19</td><td>71.58</td><td>72.29</td><td class="bold">0.2470</td><td>0.2342</td><td>0.2191</td></tr>
-    <tr><td>6</td><td>80.11</td><td>81.25</td><td>63.43</td><td>64.11</td><td class="bold">75.41</td><td class="bold">0.2730</td><td>0.2550</td><td>0.2423</td></tr>
-    <tr><td>10</td><td class="bold">84.86</td><td>84.34</td><td>70.35</td><td>77.09</td><td>81.13</td><td class="bold">0.3071</td><td>0.2772</td><td>0.2676</td></tr>
-    <tr><td>15</td><td class="bold">87.27</td><td>86.99</td><td>74.63</td><td>83.83</td><td>87.48</td><td class="bold">0.3195</td><td>0.2850</td><td>0.2867</td></tr>
+    <tr><td><i>house_tilted</i></td><td>2</td><td>61.01</td><td><b>69.86</b></td><td>43.69</td><td>56.87</td><td>63.91</td><td><b>0.2145</b></td><td>0.2002</td><td>0.1979</td></tr>
+    <tr><td><i>house_tilted</i></td><td>4</td><td>75.80</td><td><b>79.37</b></td><td>56.19</td><td>71.58</td><td>72.29</td><td><b>0.2470</b></td><td>0.2342</td><td>0.2191</td></tr>
+    <tr><td><i>house_tilted</i></td><td>6</td><td>80.11</td><td>81.25</td><td>63.43</td><td>64.11</td><td><b>75.41</b></td><td><b>0.2730</b></td><td>0.2550</td><td>0.2423</td></tr>
+    <tr><td><i>house_tilted</i></td><td>10</td><td><b>84.86</b></td><td>84.34</td><td>70.35</td><td>77.09</td><td>81.13</td><td><b>0.3071</b></td><td>0.2772</td><td>0.2676</td></tr>
+    <tr><td><i>house_tilted</i></td><td>15</td><td><b>87.27</b></td><td>86.99</td><td>74.63</td><td>83.83</td><td>87.48</td><td><b>0.3195</b></td><td>0.2850</td><td>0.2867</td></tr>
 
     <!-- office -->
-    <tr><td rowspan="5"><i>office</i></td><td>2</td><td>53.92</td><td class="bold">57.30</td><td>44.51</td><td>46.25</td><td>50.83</td><td class="bold">0.1660</td><td>0.1337</td><td>0.0915</td></tr>
-    <tr><td>4</td><td>67.42</td><td class="bold">71.77</td><td>46.31</td><td>59.04</td><td>57.78</td><td class="bold">0.2006</td><td>0.1747</td><td>0.1007</td></tr>
-    <tr><td>6</td><td>73.09</td><td class="bold">79.32</td><td>61.54</td><td>64.25</td><td>77.50</td><td class="bold">0.2192</td><td>0.1815</td><td>0.1443</td></tr>
-    <tr><td>10</td><td>83.45</td><td>83.38</td><td>65.01</td><td>79.74</td><td class="bold">82.05</td><td class="bold">0.2402</td><td>0.2033</td><td>0.1839</td></tr>
-    <tr><td>15</td><td>85.48</td><td class="bold">88.94</td><td>69.31</td><td>83.88</td><td>85.70</td><td class="bold">0.2688</td><td>0.2201</td><td>0.2244</td></tr>
+    <tr><td><i>office</i></td><td>2</td><td>53.92</td><td><b>57.30</b></td><td>44.51</td><td>46.25</td><td>50.83</td><td><b>0.1660</b></td><td>0.1337</td><td>0.0915</td></tr>
+    <tr><td><i>office</i></td><td>4</td><td>67.42</td><td><b>71.77</b></td><td>46.31</td><td>59.04</td><td>57.78</td><td><b>0.2006</b></td><td>0.1747</td><td>0.1007</td></tr>
+    <tr><td><i>office</i></td><td>6</td><td>73.09</td><td><b>79.32</b></td><td>61.54</td><td>64.25</td><td>77.50</td><td><b>0.2192</b></td><td>0.1815</td><td>0.1443</td></tr>
+    <tr><td><i>office</i></td><td>10</td><td>83.45</td><td>83.38</td><td>65.01</td><td>79.74</td><td><b>82.05</b></td><td><b>0.2402</b></td><td>0.2033</td><td>0.1839</td></tr>
+    <tr><td><i>office</i></td><td>15</td><td>85.48</td><td><b>88.94</b></td><td>69.31</td><td>83.88</td><td>85.70</td><td><b>0.2688</b></td><td>0.2201</td><td>0.2244</td></tr>
 
     <!-- office_tilted -->
-    <tr><td rowspan="5"><i>office_tilted</i></td><td>2</td><td>45.07</td><td class="bold">58.64</td><td>44.41</td><td>46.86</td><td>32.53</td><td class="bold">0.1808</td><td>0.1473</td><td>0.0971</td></tr>
-    <tr><td>4</td><td>49.75</td><td>56.43</td><td>50.11</td><td>51.34</td><td class="bold">57.84</td><td class="bold">0.2163</td><td>0.1732</td><td>0.1594</td></tr>
-    <tr><td>6</td><td>63.49</td><td class="bold">71.34</td><td>53.18</td><td>66.97</td><td>61.59</td><td class="bold">0.2257</td><td>0.1859</td><td>0.1676</td></tr>
-    <tr><td>10</td><td>71.84</td><td class="bold">80.88</td><td>56.03</td><td>72.96</td><td>72.22</td><td class="bold">0.2543</td><td>0.2236</td><td>0.2015</td></tr>
-    <tr><td>15</td><td>83.63</td><td class="bold">86.32</td><td>63.14</td><td>80.34</td><td>80.57</td><td class="bold">0.2653</td><td>0.2257</td><td>0.2126</td></tr>
+    <tr><td><i>office_tilted</i></td><td>2</td><td>45.07</td><td><b>58.64</b></td><td>44.41</td><td>46.86</td><td>32.53</td><td><b>0.1808</b></td><td>0.1473</td><td>0.0971</td></tr>
+    <tr><td><i>office_tilted</i></td><td>4</td><td>49.75</td><td>56.43</td><td>50.11</td><td>51.34</td><td><b>57.84</b></td><td><b>0.2163</b></td><td>0.1732</td><td>0.1594</td></tr>
+    <tr><td><i>office_tilted</i></td><td>6</td><td>63.49</td><td><b>71.34</b></td><td>53.18</td><td>66.97</td><td>61.59</td><td><b>0.2257</b></td><td>0.1859</td><td>0.1676</td></tr>
+    <tr><td><i>office_tilted</i></td><td>10</td><td>71.84</td><td><b>80.88</b></td><td>56.03</td><td>72.96</td><td>72.22</td><td><b>0.2543</b></td><td>0.2236</td><td>0.2015</td></tr>
+    <tr><td><i>office_tilted</i></td><td>15</td><td>83.63</td><td><b>86.32</b></td><td>63.14</td><td>80.34</td><td>80.57</td><td><b>0.2653</b></td><td>0.2257</td><td>0.2126</td></tr>
 
     <!-- museum -->
-    <tr><td rowspan="5"><i>museum</i></td><td>2</td><td>23.52</td><td>32.05</td><td>10.63</td><td class="bold">37.70</td><td>28.38</td><td class="bold">0.1161</td><td>0.0988</td><td>0.1055</td></tr>
-    <tr><td>4</td><td>37.90</td><td>49.41</td><td>21.80</td><td>41.98</td><td class="bold">54.26</td><td class="bold">0.1246</td><td>0.1006</td><td>0.0956</td></tr>
-    <tr><td>6</td><td>50.59</td><td class="bold">66.90</td><td>21.59</td><td>60.86</td><td>59.26</td><td class="bold">0.1435</td><td>0.1191</td><td>0.1068</td></tr>
-    <tr><td>10</td><td>65.76</td><td>65.63</td><td>24.85</td><td>61.48</td><td class="bold">70.62</td><td class="bold">0.1612</td><td>0.1387</td><td>0.1180</td></tr>
-    <tr><td>15</td><td>71.99</td><td class="bold">75.52</td><td>39.41</td><td>77.58</td><td>75.12</td><td class="bold">0.1841</td><td>0.1497</td><td>0.1245</td></tr>
+    <tr><td><i>museum</i></td><td>2</td><td>23.52</td><td>32.05</td><td>10.63</td><td><b>37.70</b></td><td>28.38</td><td><b>0.1161</b></td><td>0.0988</td><td>0.1055</td></tr>
+    <tr><td><i>museum</i></td><td>4</td><td>37.90</td><td>49.41</td><td>21.80</td><td>41.98</td><td><b>54.26</b></td><td><b>0.1246</b></td><td>0.1006</td><td>0.0956</td></tr>
+    <tr><td><i>museum</i></td><td>6</td><td>50.59</td><td><b>66.90</b></td><td>21.59</td><td>60.86</td><td>59.26</td><td><b>0.1435</b></td><td>0.1191</td><td>0.1068</td></tr>
+    <tr><td><i>museum</i></td><td>10</td><td>65.76</td><td>65.63</td><td>24.85</td><td>61.48</td><td><b>70.62</b></td><td><b>0.1612</b></td><td>0.1387</td><td>0.1180</td></tr>
+    <tr><td><i>museum</i></td><td>15</td><td>71.99</td><td><b>75.52</b></td><td>39.41</td><td>77.58</td><td>75.12</td><td><b>0.1841</b></td><td>0.1497</td><td>0.1245</td></tr>
 
     <!-- museum_tilted -->
-    <tr><td rowspan="5"><i>museum_tilted</i></td><td>2</td><td>24.47</td><td>30.81</td><td>12.39</td><td>29.69</td><td class="bold">31.63</td><td class="bold">0.1297</td><td>0.1118</td><td>0.1096</td></tr>
-    <tr><td>4</td><td>37.47</td><td>41.72</td><td>16.49</td><td>45.82</td><td class="bold">51.68</td><td class="bold">0.1451</td><td>0.1229</td><td>0.1257</td></tr>
-    <tr><td>6</td><td>46.49</td><td class="bold">63.00</td><td>28.44</td><td>47.66</td><td>57.10</td><td class="bold">0.1538</td><td>0.1361</td><td>0.1114</td></tr>
-    <tr><td>10</td><td>57.32</td><td class="bold">65.91</td><td>30.01</td><td>66.06</td><td>68.27</td><td class="bold">0.1748</td><td>0.1434</td><td>0.1142</td></tr>
-    <tr><td>15</td><td>69.12</td><td class="bold">74.24</td><td>40.99</td><td>65.72</td><td>80.32</td><td class="bold">0.1948</td><td>0.1579</td><td>0.1360</td></tr>
+    <tr><td><i>museum_tilted</i></td><td>2</td><td>24.47</td><td>30.81</td><td>12.39</td><td>29.69</td><td><b>31.63</b></td><td><b>0.1297</b></td><td>0.1118</td><td>0.1096</td></tr>
+    <tr><td><i>museum_tilted</i></td><td>4</td><td>37.47</td><td>41.72</td><td>16.49</td><td>45.82</td><td><b>51.68</b></td><td><b>0.1451</b></td><td>0.1229</td><td>0.1257</td></tr>
+    <tr><td><i>museum_tilted</i></td><td>6</td><td>46.49</td><td><b>63.00</b></td><td>28.44</td><td>47.66</td><td>57.10</td><td><b>0.1538</b></td><td>0.1361</td><td>0.1114</td></tr>
+    <tr><td><i>museum_tilted</i></td><td>10</td><td>57.32</td><td><b>65.91</b></td><td>30.01</td><td>66.06</td><td>68.27</td><td><b>0.1748</b></td><td>0.1434</td><td>0.1142</td></tr>
+    <tr><td><i>museum_tilted</i></td><td>15</td><td>69.12</td><td><b>74.24</b></td><td>40.99</td><td>65.72</td><td>80.32</td><td><b>0.1948</b></td><td>0.1579</td><td>0.1360</td></tr>
   </tbody>
 </table>
 </div>
+
 
 
 
