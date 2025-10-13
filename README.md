@@ -20,7 +20,7 @@ This page presents additional companion material for ...
 
 <p align="center"><em>Figure 5: Six virtual maps used for performance evaluation of the BICLARE algorithm.</em></p>
 
-
+## Six Virtual Environments  FIG. 6
 <h2>Localization Error Heatmaps</h2>
 
 <h3>Magnitude heatmaps (<i>M<sub>mag</sub></i>)</h3>
@@ -32,9 +32,8 @@ This page presents additional companion material for ...
     <th>Museum</th>
   </tr>
   <tr>
-    <td><img src="figures/heatmaps/error_heatmap_house.png" width="250"></td>
-    <td><img src="figures/heatmaps/error_heatmap_office.png" width="250"></td>
-    <td><img src="figures/heatmaps/error_heatmap_museum.png" width="250"></td>
+    <td><img src="experiments/heatmaps/error_heatmap_office.png" width="250"></td>
+    <td><img src="experiments/heatmaps/error_heatmap_museum.png" width="250"></td>
   </tr>
 </table>
 
@@ -52,9 +51,9 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
     <th>Museum</th>
   </tr>
   <tr>
-    <td><img src="figures/heatmaps/error_direction_heatmap_house.png" width="250"></td>
-    <td><img src="figures/heatmaps/error_direction_heatmap_office.png" width="250"></td>
-    <td><img src="figures/heatmaps/error_direction_heatmap_museum.png" width="250"></td>
+    <td><img src="experiments/heatmaps/error_direction_heatmap_house.png" width="250"></td>
+    <td><img src="experiments/heatmaps/error_direction_heatmap_office.png" width="250"></td>
+    <td><img src="experiments/heatmaps/error_direction_heatmap_museum.png" width="250"></td>
   </tr>
 </table>
 
