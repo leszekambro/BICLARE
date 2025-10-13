@@ -170,6 +170,15 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
 </p>
 #################
 ##################
+<p align="center">
+  <img src="results/noise/alg_comp/map_observation_count_museum_tilted_BICLARE-PP_n1_st0_6_agents_s2.csv.png" 
+       alt="Cell observation heatmap for BICLARE-PP" 
+       width="70%">
+</p>
+
+<p align="center"><em>Fig. 1 – Cell observation heatmap for BICLARE-PP.</em></p>
+#########################
+#######################
 <!DOCTYPE html>
 <html lang="en">
 <head>
