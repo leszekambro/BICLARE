@@ -144,10 +144,18 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
 
 
 <style>
+  .table-container {
+    max-height: 600px; /* wysokość przewijanego okna – możesz zmienić np. na 500px */
+    overflow: auto;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+  }
+
   table {
     border-collapse: collapse;
     width: 100%;
     font-size: 12px;
+    min-width: 1000px; /* wymusza poziomy scrollbar jeśli ekran jest wąski */
   }
   th, td {
     border: 1px solid #ccc;
@@ -157,6 +165,10 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
   th {
     background-color: #f2f2f2;
     font-weight: bold;
+    position: sticky;
+    top: 0; /* nagłówek będzie „przyklejony” przy przewijaniu w pionie */
+    background-clip: padding-box;
+    z-index: 2;
   }
   caption {
     caption-side: top;
@@ -170,6 +182,7 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
   i { font-style: italic; }
 </style>
 
+<div class="table-container">
 <table>
   <caption>Performance of different algorithms across all maps and swarm sizes, for <i>f<sub>e</sub>=0</i></caption>
   <thead>
@@ -234,6 +247,8 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
     <tr><td>15</td><td>69.12</td><td class="bold">74.24</td><td>40.99</td><td>65.72</td><td>80.32</td><td class="bold">0.1948</td><td>0.1579</td><td>0.1360</td></tr>
   </tbody>
 </table>
+</div>
+
 
 
 
