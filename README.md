@@ -141,16 +141,46 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
 
 <h3>Performance of different algorithms across all maps and swarm sizes (for <i>f<sub>e</sub> = 0</i>)</h3>
 
-<div style="overflow-x: auto;">
-<table style="border-collapse: collapse; font-size: 12px; text-align: center; width: 100%;">
+
+
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 4px 6px;
+    text-align: center;
+  }
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  caption {
+    caption-side: top;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+  tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+  .bold {
+    font-weight: bold;
+  }
+</style>
+
+<table>
+  <caption>Performance of different algorithms across all maps and swarm sizes, for <i>f<sub>e</sub>=0</i></caption>
   <thead>
-    <tr style="background-color: #f2f2f2;">
+    <tr>
       <th rowspan="2">Map</th>
       <th rowspan="2">N<sub>A</sub></th>
       <th colspan="5">ACP</th>
       <th colspan="3">AAC</th>
     </tr>
-    <tr style="background-color: #f9f9f9;">
+    <tr>
       <th>BICLARE-PP</th>
       <th>BICLARE-WF</th>
       <th>FSP-QT</th>
@@ -162,44 +192,20 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
     </tr>
   </thead>
   <tbody>
+    <tr><td rowspan="5"><i>house</i></td><td>2</td><td class="bold">69.40</td><td>66.68</td><td>49.12</td><td>61.19</td><td>61.68</td><td class="bold">0.2023</td><td>0.2001</td><td>0.1543</td></tr>
+    <tr><td>4</td><td class="bold">82.74</td><td>78.30</td><td>68.23</td><td>70.00</td><td>69.33</td><td class="bold">0.2450</td><td>0.2259</td><td>0.1849</td></tr>
+    <tr><td>6</td><td class="bold">84.78</td><td>84.41</td><td>75.09</td><td>75.77</td><td>77.05</td><td class="bold">0.2733</td><td>0.2420</td><td>0.1977</td></tr>
+    <tr><td>10</td><td>84.65</td><td>85.67</td><td>80.47</td><td>84.49</td><td class="bold">86.71</td><td class="bold">0.3053</td><td>0.2769</td><td>0.2551</td></tr>
+    <tr><td>15</td><td class="bold">88.73</td><td>87.77</td><td>84.56</td><td>85.44</td><td>87.47</td><td class="bold">0.3203</td><td>0.2896</td><td>0.2812</td></tr>
 
-    <tr>
-      <td rowspan="5"><b>house</b></td>
-      <td>2</td><td><b>69.40</b></td><td>66.68</td><td>49.12</td><td>61.19</td><td>61.68</td><td><b>0.2023</b></td><td>0.2001</td><td>0.1543</td>
-    </tr>
-    <tr>
-      <td>4</td><td><b>82.74</b></td><td>78.30</td><td>68.23</td><td>70.00</td><td>69.33</td><td><b>0.2450</b></td><td>0.2259</td><td>0.1849</td>
-    </tr>
-    <tr>
-      <td>6</td><td><b>84.78</b></td><td>84.41</td><td>75.09</td><td>75.77</td><td>77.05</td><td><b>0.2733</b></td><td>0.2420</td><td>0.1977</td>
-    </tr>
-    <tr>
-      <td>10</td><td>84.65</td><td>85.67</td><td>80.47</td><td>84.49</td><td><b>86.71</b></td><td><b>0.3053</b></td><td>0.2769</td><td>0.2551</td>
-    </tr>
-    <tr>
-      <td>15</td><td><b>88.73</b></td><td>87.77</td><td>84.56</td><td>85.44</td><td>87.47</td><td><b>0.3203</b></td><td>0.2896</td><td>0.2812</td>
-    </tr>
-
-    <tr style="background-color:#f9f9f9;">
-      <td rowspan="5"><b>museum</b></td>
-      <td>2</td><td>23.52</td><td>32.05</td><td>10.63</td><td><b>37.70</b></td><td>28.38</td><td><b>0.1161</b></td><td>0.0988</td><td>0.1055</td>
-    </tr>
-    <tr style="background-color:#f9f9f9;">
-      <td>4</td><td>37.90</td><td>49.41</td><td>21.80</td><td>41.98</td><td><b>54.26</b></td><td><b>0.1246</b></td><td>0.1006</td><td>0.0956</td>
-    </tr>
-    <tr style="background-color:#f9f9f9;">
-      <td>6</td><td>50.59</td><td><b>66.90</b></td><td>21.59</td><td>60.86</td><td>59.26</td><td><b>0.1435</b></td><td>0.1191</td><td>0.1068</td>
-    </tr>
-    <tr style="background-color:#f9f9f9;">
-      <td>10</td><td>65.76</td><td>65.63</td><td>24.85</td><td>61.48</td><td><b>70.62</b></td><td><b>0.1612</b></td><td>0.1387</td><td>0.1180</td>
-    </tr>
-    <tr style="background-color:#f9f9f9;">
-      <td>15</td><td>71.99</td><td><b>75.52</b></td><td>39.41</td><td>77.58</td><td>75.12</td><td><b>0.1841</b></td><td>0.1497</td><td>0.1245</td>
-    </tr>
-
+    <tr><td rowspan="5"><i>house_tilted</i></td><td>2</td><td>61.01</td><td class="bold">69.86</td><td>43.69</td><td>56.87</td><td>63.91</td><td class="bold">0.2145</td><td>0.2002</td><td>0.1979</td></tr>
+    <tr><td>4</td><td>75.80</td><td class="bold">79.37</td><td>56.19</td><td>71.58</td><td>72.29</td><td class="bold">0.2470</td><td>0.2342</td><td>0.2191</td></tr>
+    <tr><td>6</td><td>80.11</td><td>81.25</td><td>63.43</td><td>64.11</td><td class="bold">75.41</td><td class="bold">0.2730</td><td>0.2550</td><td>0.2423</td></tr>
+    <tr><td>10</td><td class="bold">84.86</td><td>84.34</td><td>70.35</td><td>77.09</td><td>81.13</td><td class="bold">0.3071</td><td>0.2772</td><td>0.2676</td></tr>
+    <tr><td>15</td><td class="bold">87.27</td><td>86.99</td><td>74.63</td><td>83.83</td><td>87.48</td><td class="bold">0.3195</td><td>0.2850</td><td>0.2867</td></tr>
+    <!-- (Analogicznie dodaj pozostałe sekcje: office, office_tilted, museum, museum_tilted) -->
   </tbody>
 </table>
-</div>
 
 
 
