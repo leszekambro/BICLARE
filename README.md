@@ -1,12 +1,10 @@
 # BICLARE
-# Virtual Maps
 
-This page presents example virtual maps used in the evaluation of the **BICLARE** exploration algorithm.  
-Each environment is characterized by different spatial features and complexity, allowing performance benchmarking under diverse conditions.
+This page presents additional companion material for ...
 
 ---
 
-## Six Virtual Environments
+## Six Virtual Environments  FIG. 5 
 
 <p align="center">
   <img src="experiments/maps/house_map.png" width="30%" />
@@ -20,28 +18,47 @@ Each environment is characterized by different spatial features and complexity, 
   <img src="experiments/maps/museum_tilted_map.png" width="30%" />
 </p>
 
-<p align="center"><em>Figure 1: Six virtual maps used for performance evaluation of the BICLARE algorithm.</em></p>
+<p align="center"><em>Figure 5: Six virtual maps used for performance evaluation of the BICLARE algorithm.</em></p>
 
----
 
-## 📊 Map Parameters
+<h2>Localization Error Heatmaps</h2>
 
-| Environment          | ρ (resolution) | AA (Accessible Area) | IA (Inaccessible Area) |
-|----------------------|----------------|----------------------|------------------------|
-| house               | 0.203125       | 75.299 m²           | 15.472 m²            |
-| house_tilted        | 0.24375        | 78.605 m²           | 12.715 m²            |
-| office             | 0.1640625      | 173.154 m²          | 30.443 m²           |
-| office_tilted      | 0.18125        | 176.347 m²          | 28.055 m²           |
-| museum             | 0.2421875      | 689.311 m²          | 44.108 m²           |
-| museum_tilted      | 0.265625       | 701.827 m²          | 34.503 m²           |
+<h3>Magnitude heatmaps (<i>M<sub>mag</sub></i>)</h3>
 
----
+<table style="width:100%; text-align:center;">
+  <tr>
+    <th>House</th>
+    <th>Office</th>
+    <th>Museum</th>
+  </tr>
+  <tr>
+    <td><img src="figures/heatmaps/error_heatmap_house.png" width="250"></td>
+    <td><img src="figures/heatmaps/error_heatmap_office.png" width="250"></td>
+    <td><img src="figures/heatmaps/error_heatmap_museum.png" width="250"></td>
+  </tr>
+</table>
 
-## 📁 Additional Resources
+<p><b>Figure 1.</b> Localization error magnitude heatmaps <i>M<sub>mag</sub></i>. 
+For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.</p>
 
-This is only a subset of available experimental data and visualizations.  
-➡️ **Full dataset and additional maps** are available in the repository:  
-[🔗 View more maps and metrics here](https://github.com/yourusername/yourrepo/tree/main/Figures/experiments/maps)
+<hr>
 
----
+<h3>Direction heatmaps (<i>M<sub>dir</sub></i>)</h3>
+
+<table style="width:100%; text-align:center;">
+  <tr>
+    <th>House</th>
+    <th>Office</th>
+    <th>Museum</th>
+  </tr>
+  <tr>
+    <td><img src="figures/heatmaps/error_direction_heatmap_house.png" width="250"></td>
+    <td><img src="figures/heatmaps/error_direction_heatmap_office.png" width="250"></td>
+    <td><img src="figures/heatmaps/error_direction_heatmap_museum.png" width="250"></td>
+  </tr>
+</table>
+
+<p><b>Figure 2.</b> Localization error direction heatmaps <i>M<sub>dir</sub></i>.</p>
+
+
 
