@@ -225,7 +225,56 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
   </table>
 
 </div>
+#############
+<div style="display: flex; justify-content: space-between; gap: 20px;">
 
+  <!-- Tabela 1 -->
+  <table style="font-size: 0.9em; border-collapse: collapse; width: 47%;">
+    <caption style="caption-side: top; font-weight: bold; padding-bottom: 4px;">
+      Variable parameter combinations for experiment 3
+    </caption>
+    <thead>
+      <tr>
+        <th style="border-bottom: 2px solid #000; text-align: left;">Parameter</th>
+        <th style="border-bottom: 2px solid #000; text-align: left;">Values</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>R<sub>comm</sub></td><td>[∞]</td></tr>
+      <tr><td>P<sub>loss</sub></td><td>[0]</td></tr>
+      <tr><td>T<sub>φ</sub></td><td>[50, 100, 150, ∞]</td></tr>
+      <tr><td>T<sub>spawn</sub></td><td>[100, 180, ∞]</td></tr>
+      <tr><td>f<sub>e</sub></td><td>[0, 1]</td></tr>
+      <tr><td>R<sub>f</sub></td><td>[∞]</td></tr>
+      <tr><td>N<sub>f</sub></td><td>[∞]</td></tr>
+      <tr><td>N<sub>s</sub></td><td>[∞]</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Tabela 2 -->
+  <table style="font-size: 0.9em; border-collapse: collapse; width: 47%;">
+    <caption style="caption-side: top; font-weight: bold; padding-bottom: 4px;">
+      Variable parameter combinations for experiment 4
+    </caption>
+    <thead>
+      <tr>
+        <th style="border-bottom: 2px solid #000; text-align: left;">Parameter</th>
+        <th style="border-bottom: 2px solid #000; text-align: left;">Values</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>R<sub>comm</sub></td><td>[5, 10, 15, ∞]</td></tr>
+      <tr><td>P<sub>loss</sub></td><td>[0, 0.25, 0.5]</td></tr>
+      <tr><td>T<sub>φ</sub></td><td>[100]</td></tr>
+      <tr><td>T<sub>spawn</sub></td><td>[100, 180, ∞]</td></tr>
+      <tr><td>f<sub>e</sub></td><td>[0, 1]</td></tr>
+      <tr><td>R<sub>f</sub></td><td>[∞]</td></tr>
+      <tr><td>N<sub>f</sub></td><td>[∞]</td></tr>
+      <tr><td>N<sub>s</sub></td><td>[∞]</td></tr>
+    </tbody>
+  </table>
+
+</div>
 
 #######
 <!DOCTYPE html>
