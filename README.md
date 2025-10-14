@@ -482,6 +482,46 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
 
 
 
+###################################
+<p>
+Using the position estimation magnitude and direction heatmaps, 
+<i>M</i><sub>mag</sub> and <i>M</i><sub>dir</sub> respectively, 
+are used to determine the simulated estimated position 
+<i>p</i><sub>i</sub> of each agent <i>A</i><sub>i</sub>:
+</p>
+
+<p>$$
+p_i = p_{i,\mathrm{actual}} + v_{i,\mathrm{offset}}
+$$</p>
+
+<p>$$
+v_{i,\mathrm{offset}} =
+\begin{bmatrix}
+\varepsilon_p \cos \theta_p \\
+\varepsilon_p \sin \theta_p
+\end{bmatrix}
+$$</p>
+
+<p>$$
+\varepsilon_p = M_{\mathrm{mag}}(p_{i,\mathrm{actual},x},\, p_{i,\mathrm{actual},y}) f_e + p_{i,\mathrm{noise}}
+$$</p>
+
+<p>$$
+p_{i,\mathrm{noise}} = J_p() + n_{p,i}
+$$</p>
+
+<p>$$
+\theta_p = M_{\mathrm{dir}}(p_{i,\mathrm{actual},x},\, p_{i,\mathrm{actual},y}) f_e + \theta_{i,\mathrm{noise}}
+$$</p>
+
+<p>$$
+\theta_{i,\mathrm{noise}} = J_\theta() + n_{\theta,i}
+$$</p>
+
+<p>
+$$\sigma_p = 0.05 f_e$$ <br>
+$$\sigma_\theta = 0.0698 f_e$$ (in radians)
+</p>
 
 
 
