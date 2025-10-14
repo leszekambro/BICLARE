@@ -179,6 +179,55 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
 <p align="center"><em>Fig. 1 – Cell observation heatmap for BICLARE-PP.</em></p>
 #########################
 #######################
+<div style="display: flex; justify-content: space-between; gap: 20px;">
+
+  <!-- Tabela 1 -->
+  <table style="font-size: 0.9em; border-collapse: collapse; width: 48%;">
+    <caption style="caption-side: top; font-weight: bold; padding-bottom: 4px;">
+      Localization error simulation results.
+    </caption>
+    <thead>
+      <tr>
+        <th style="border-bottom: 2px solid #000; text-align: left;">Metric</th>
+        <th style="border-bottom: 2px solid #000; text-align: left;">Value [m]</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Min</td><td>0.004</td></tr>
+      <tr><td>Max</td><td>1.033</td></tr>
+      <tr><td>Mean (μ)</td><td>0.227</td></tr>
+      <tr><td>Median</td><td>0.193</td></tr>
+      <tr><td>Std. dev. (σ)</td><td>0.154</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Tabela 2 -->
+  <table style="font-size: 0.9em; border-collapse: collapse; width: 48%;">
+    <caption style="caption-side: top; font-weight: bold; padding-bottom: 4px;">
+      Variable parameter combinations for experiment 1.
+    </caption>
+    <thead>
+      <tr>
+        <th style="border-bottom: 2px solid #000; text-align: left;">Parameter</th>
+        <th style="border-bottom: 2px solid #000; text-align: left;">Values</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>R<sub>comm</sub></td><td>[∞]</td></tr>
+      <tr><td>P<sub>loss</sub></td><td>[0]</td></tr>
+      <tr><td>T<sub>φ</sub></td><td>[100]</td></tr>
+      <tr><td>T<sub>spawn</sub></td><td>[100, 180, ∞]</td></tr>
+      <tr><td>f<sub>e</sub></td><td>[0, 0.5, 1, 1.5]</td></tr>
+      <tr><td>R<sub>f</sub></td><td>[∞]</td></tr>
+      <tr><td>N<sub>f</sub></td><td>[∞]</td></tr>
+      <tr><td>N<sub>s</sub></td><td>[∞]</td></tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+#######
 <!DOCTYPE html>
 <html lang="en">
 <head>
