@@ -523,7 +523,10 @@ $$\sigma_p = 0.05 f_e$$ <br>
 $$\sigma_\theta = 0.0698 f_e$$ (in radians)
 </p>
 
-
+########
+<p style="font-family: monospace; font-size: 0.95em;">
+θ<sub>i</sub> = θ<sub>i,actual</sub> + M<sub>θ</sub>(p<sub>i,actual,x</sub>, p<sub>i,actual,y</sub>) f<sub>e</sub> + θ<sub>i,noise</sub>
+</p>
 
 
 
