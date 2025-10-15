@@ -634,7 +634,7 @@ We report the number of swarm agents that successfully returned to the deploymen
 We define a successful return for agent \(A_i\) when \(\left\lVert p_i - p_{i,t_0} \right\rVert < 2\,\text{m}\).
 </p>
 
-
+<iframe src="./BICLARE_APPENDIX.pdf#view=FitH" width="100%" height="600"></iframe>
 
 
 
