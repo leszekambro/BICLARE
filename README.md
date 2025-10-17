@@ -492,8 +492,7 @@ The following equations describe the full formulation of the estimated position 
 </div>
 
 <div style="display: flex; justify-content: center; max-height:800px; border:1px solid #ccc; padding:10px;">
-  <img src="./BICLARE_APPENDIX-2.jpg" alt="Podgląd dokumentu 1" style="max-width:49%; height:auto; image-rendering: crisp-edges; margin: 0 5px;">
-  <img src="./BICLARE_APPENDIX-2_2.jpg" alt="Podgląd dokumentu 2" style="max-width:49%; height:auto; image-rendering: crisp-edges; margin: 0 5px;">
+  <img src="./BICLARE_APPENDIX-3.jpg" alt="Podgląd dokumentu 1" style="max-width:49%; height:auto; image-rendering: crisp-edges; margin: 0 5px;">
 </div>
 
 
