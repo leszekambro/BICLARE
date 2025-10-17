@@ -637,6 +637,6 @@ We define a successful return for agent \(A_i\) when \(\left\lVert p_i - p_{i,t_
 
 
 <div style="width:100%; max-height:800px; overflow:auto; border:1px solid #ccc;">
-  <img src="./metrics.png" alt="Podgląd dokumentu" width="100%">
+  <img src="./matrics.png" alt="Podgląd dokumentu" width="100%">
 </div>
 
