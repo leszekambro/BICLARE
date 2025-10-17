@@ -483,160 +483,31 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
 
 
 ###################################
-<p>
-Using the position estimation magnitude and direction heatmaps, 
-<i>M</i><sub>mag</sub> and <i>M</i><sub>dir</sub> respectively, 
-are used to determine the simulated estimated position 
-<i>p</i><sub>i</sub> of each agent <i>A</i><sub>i</sub>:
-</p>
+## Position Estimation Model
 
-<p>$$
-p_i = p_{i,\mathrm{actual}} + v_{i,\mathrm{offset}}
-$$</p>
+To accurately simulate the localization process of each agent, we incorporate both magnitude and directional components of position estimation errors into the model. Using the position estimation magnitude and direction heatmaps, denoted as $M_{mag}$ and $M_{dir}$ respectively, the estimated position $\mathbf{p}_i$ of each agent $A_i$ is computed as a function of its true position and a generated offset vector. This offset captures systematic and stochastic components of localization uncertainty, including error magnitude, direction deviation, and random noise.
 
-<p>$$
-v_{i,\mathrm{offset}} =
-\begin{bmatrix}
-\varepsilon_p \cos \theta_p \\
-\varepsilon_p \sin \theta_p
-\end{bmatrix}
-$$</p>
+The following equations describe the full formulation of the estimated position model, where the offset vector $\mathbf{v}_{i,offset}$ is determined based on the heatmap data, scaling factor $f_e$, and random noise terms. These terms are drawn from Gaussian distributions with standard deviations $\sigma_p = 0.05f_e$ for positional error and $\sigma_\theta = 0.0698f_e$ radians for angular error. Together, they allow the simulation to realistically approximate sensor inaccuracies and environmental effects on localization.
 
-<p>$$
-\varepsilon_p = M_{\mathrm{mag}}(p_{i,\mathrm{actual},x},\, p_{i,\mathrm{actual},y}) f_e + p_{i,\mathrm{noise}}
-$$</p>
+</div>
 
-<p>$$
-p_{i,\mathrm{noise}} = J_p() + n_{p,i}
-$$</p>
-
-<p>$$
-\theta_p = M_{\mathrm{dir}}(p_{i,\mathrm{actual},x},\, p_{i,\mathrm{actual},y}) f_e + \theta_{i,\mathrm{noise}}
-$$</p>
-
-<p>$$
-\theta_{i,\mathrm{noise}} = J_\theta() + n_{\theta,i}
-$$</p>
-
-<p>
-$$\sigma_p = 0.05 f_e$$ <br>
-$$\sigma_\theta = 0.0698 f_e$$ (in radians)
-</p>
-
-########
-<p style="font-family: monospace; font-size: 0.95em;">
-θ<sub>i</sub> = θ<sub>i,actual</sub> + M<sub>θ</sub>(p<sub>i,actual,x</sub>, p<sub>i,actual,y</sub>) f<sub>e</sub> + θ<sub>i,noise</sub>
-</p>
+<div style="display: flex; justify-content: center; max-height:800px; border:1px solid #ccc; padding:10px;">
+  <img src="./BICLARE_APPENDIX-2.jpg" alt="Podgląd dokumentu 1" style="max-width:49%; height:auto; image-rendering: crisp-edges; margin: 0 5px;">
+  <img src="./BICLARE_APPENDIX-2_2.jpg" alt="Podgląd dokumentu 2" style="max-width:49%; height:auto; image-rendering: crisp-edges; margin: 0 5px;">
+</div>
 
 
+## Performance Metrics Overview
 
-##########################
+<div style="text-align: justify;">
 
+To comprehensively evaluate the performance of the proposed system, we conducted a series of controlled experiments aimed at measuring exploration efficiency, decision confidence, and mapping accuracy under various swarm configurations. Each experiment was repeated five times with different random seeds (1–5), and the average value of each metric was calculated across all repetitions to ensure statistical robustness. While the deployment position of the agents remained constant throughout all trials, their initial orientations were randomized for each run to introduce variability. Experiments were performed for swarms of different sizes ($N_A = 2, 4, 6, 10, 15$) in order to study the scalability and collective behavior of the system.
 
-<h3 id="performance-metrics">Performance Metrics</h3>
-<p>
-All experiments were repeated 5 times, with random seeds 1–5, and the average of each metric was taken over all repetitions. While their deployment position was constant, each agent’s deployment orientation was randomized for each repetition.
-We ran experiments with varying swarm sizes \(N_A\) of 2, 4, 6, 10, and 15 agents.
-</p>
+The following subsections present and discuss the primary performance indicators used in our analysis. These include coverage metrics, which quantify the efficiency and extent of environment exploration; confidence metrics, which measure the certainty of decision-making across the mission timeline; and mapping accuracy metrics, which assess how faithfully the reconstructed environment reflects the ground truth. Together, these measures provide a comprehensive view of the system’s capabilities, limitations, and potential for deployment in real-world multi-agent scenarios.
 
-<h4 id="coverage-metrics">Coverage Metrics</h4>
-<p>
-Coverage is a significant metric for exploration. The coverage percentage \(CP(t)\) at time \(t\) is defined as:
-</p>
+</div>
 
-$$
-CP(t) \;=\; \frac{N_{cc}(t)\,\rho^2}{AA}
-$$
-
-<p>
-where \(N_{cc}(t)\) is the number of covered cells in the agent’s map. Note that when there are pose estimation or distance sensor inaccuracies, cells outside the map borders or in \(IA\) might be added to an agent’s map. These are counted towards \(N_{cc}\). Cells merged by our algorithm are divided into cells of size \(\rho\).
-</p>
-
-<p>
-We also compare the coverage metric of the final gathered map from the agent, in which we ignore cells outside the arena and in \(IA\):
-</p>
-
-$$
-CP_m \;=\; \frac{N_{mc}\,\rho^2}{AA}
-$$
-
-<p>
-where \(N_{mc}\) is the number of covered cells inside the map boundaries and outside \(IA\) in the map.
-</p>
-
-<p>
-To compare which configuration results in the fastest increase in coverage, we also include the average coverage percentage during the mission, \(ACP\):
-</p>
-
-$$
-ACP \;=\; \frac{\sum_{t=0}^{T_{\mathrm{end}}} CP(t)}{T_{\mathrm{end}}}
-$$
-
-<p>
-As officially FSP considers cells with fully evaporated pheromones uncovered, we include previously covered but evaporated pheromone-cells in \(N_{cc}\) for a fair comparison.
-</p>
-
-<h4 id="confidence-metrics">Confidence Metrics</h4>
-<p>
-For BICLARE it is interesting to observe the average certainty at time \(t\), \(AC(t)=\left|\varphi(z,t)-0.5\right|\).
-To compare which configuration can ensure the highest overall certainty, we define the mean average certainty during the entire mission:
-</p>
-
-$$
-AAC \;=\; \frac{\sum_{t=0}^{T_{\mathrm{end}}} AC(t)}{T_{\mathrm{end}}}
-$$
-
-<h4 id="mapping-accuracy">Mapping accuracy</h4>
-<p>
-To evaluate the accuracy of the created maps, we use the precision and recall metrics. Here, we define cell \(z\) in a generated map to be an obstacle cell if \(\varphi(z,t)<0.5\), and free if \(\varphi(z,t)\ge 0.5\).
-Splitting the actual map up in cells of size \(\rho\), we define cells to be truly occupied when obstacles cover 10\% of their area.
-Given the number of correctly identified obstacle cells \(TP\), falsely identified obstacle cells \(FP\), and falsely identified free cells \(FN\):
-</p>
-
-$$
-\text{precision} \;=\; \frac{TP}{TP + FP}
-$$
-
-<p>and</p>
-
-$$
-\text{recall} \;=\; \frac{TP}{TP + FN}
-$$
-
-<p>
-To determine \(TP\), \(FP\), and \(FN\), only cells in \(N_{cc}\) that were at any point reachable during the experiment are considered.
-To get a more general impression of the accuracy of the created map for comparison between algorithms, we use the \(F_1\)-score, which is the harmonic mean of precision and recall:
-</p>
-
-$$
-F_1 \;=\; \frac{2 \cdot \text{precision} \cdot \text{recall}}{\text{precision} + \text{recall}}
-$$
-
-<p>
-For each experiment, we take the map of the agent who finished first \((S_i = 4)\), at its finish time.
-</p>
-
-<h4 id="obstacle-avoidance">Obstacle avoidance</h4>
-<p>
-We report the number of agent–obstacle collisions and the number of inter-agent collisions. The former shows the average collisions with static or dynamic obstacles per agent. The latter is also shown on average per agent, meaning that two agents colliding is one inter-agent collision per agent.
-</p>
-
-<h4 id="efficiency">Efficiency</h4>
-<p>
-To determine the efficiency of our algorithm, we compare the total travelled path and estimated battery usage by each agent throughout the mission. The battery estimation is based on the estimated power drawn by the motors and from sending and exchanging messages.
-We also track the distribution of observations throughout the map by counting the number of times each cell is observed. One observation of a cell is defined as a sensor ray crossing or being intersected in that cell.
-To determine the memory efficiency of our quadtree, we compare the number of quadtree nodes with the number of cells in the map if it were a matrix.
-</p>
-
-<h4 id="return-rate">Return rate</h4>
-<p>
-We report the number of swarm agents that successfully returned to the deployment site.
-We define a successful return for agent \(A_i\) when \(\left\lVert p_i - p_{i,t_0} \right\rVert < 2\,\text{m}\).
-</p>
-
-
-
-<div style="display: flex; justify-content: center; gap: 10px; max-height:800px; overflow:auto; border:1px solid #ccc; padding:10px;">
-  <img src="./BICLARE_APPENDIX-2.jpg" alt="Podgląd dokumentu 1" style="max-width:49%; height:auto; image-rendering: crisp-edges;">
-  <img src="./BICLARE_APPENDIX-2_2.jpg" alt="Podgląd dokumentu 2" style="max-width:49%; height:auto; image-rendering: crisp-edges;">
+<div style="display: flex; justify-content: center; max-height:800px; border:1px solid #ccc; padding:10px;">
+  <img src="./BICLARE_APPENDIX-2.jpg" alt="Podgląd dokumentu 1" style="max-width:49%; height:auto; image-rendering: crisp-edges; margin: 0 5px;">
+  <img src="./BICLARE_APPENDIX-2_2.jpg" alt="Podgląd dokumentu 2" style="max-width:49%; height:auto; image-rendering: crisp-edges; margin: 0 5px;">
 </div>
