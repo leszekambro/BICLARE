@@ -20,6 +20,8 @@ This page presents additional companion material for ...
 
 <p align="center"><em>Figure 5: Six virtual maps used for performance evaluation of the BICLARE algorithm.</em></p>
 
+
+
 ## Six Virtual Environments  FIG. 6
 <h2>Localization Error Heatmaps</h2>
 
@@ -140,8 +142,7 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
 <p><b>Figure:</b> Examples of generated maps from experiments with <i>f<sub>e</sub> = 1.5</i>.</p>
 
 <h3>Performance of different algorithms across all maps and swarm sizes (for <i>f<sub>e</sub> = 0</i>)</h3>
-#################
-###############
+
 <div style="display:flex; gap:12px; align-items:flex-start; justify-content:center; flex-wrap:wrap;">
   <figure style="margin:0; text-align:center; flex:1 1 300px; max-width:33%;">
     <a href="results/noise/alg_comp/house_tilted_15_agents_noise_0_comparison_histogram.png">
@@ -165,26 +166,59 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
   </figure>
 </div>
 
-<p style="text-align:center; font-size:0.9em; margin-top:6px;">
-  Cell observation count distribution. Averaged over T<sub>spawn</sub>.
-</p>
-#################
-##################
-<p align="center">
-  <img src="results/noise/alg_comp/map_observation_count_museum_tilted_BICLARE-PP_n1_st0_6_agents_s2.csv.png" 
-       alt="Cell observation heatmap for BICLARE-PP" 
-       width="70%">
-</p>
 
-<p align="center"><em>Fig. 1 – Cell observation heatmap for BICLARE-PP.</em></p>
-#########################
-#######################
+#
+<h3>Performance of different algorithms across all maps and swarm sizes (for <i>f<sub>e</sub> = 0</i>)</h3>
+
+<div style="display: flex; justify-content: center; align-items: flex-start; gap: 10px; flex-wrap: nowrap; width: 100%;">
+
+  <figure style="margin: 0; text-align: center; width: 30%;">
+    <a href="results/noise/alg_comp/house_tilted_15_agents_noise_0_comparison_histogram.png">
+      <img src="results/noise/alg_comp/house_tilted_15_agents_noise_0_comparison_histogram.png" 
+           alt="house_tilted, N_A=15, f_e=0" 
+           style="width: 100%; height: auto; display: block;" />
+    </a>
+    <figcaption style="font-size: 0.85em; margin-top: 4px;">
+      house_tilted, N<sub>A</sub>=15, f<sub>e</sub>=0
+    </figcaption>
+  </figure>
+
+  <figure style="margin: 0; text-align: center; width: 30%;">
+    <a href="results/noise/alg_comp/office_4_agents_noise_0_comparison_histogram.png">
+      <img src="results/noise/alg_comp/office_4_agents_noise_0_comparison_histogram.png" 
+           alt="office, N_A=4, f_e=0" 
+           style="width: 100%; height: auto; display: block;" />
+    </a>
+    <figcaption style="font-size: 0.85em; margin-top: 4px;">
+      office, N<sub>A</sub>=4, f<sub>e</sub>=0
+    </figcaption>
+  </figure>
+
+  <figure style="margin: 0; text-align: center; width: 30%;">
+    <a href="results/noise/alg_comp/museum_tilted_6_agents_noise_1_comparison_histogram.png">
+      <img src="results/noise/alg_comp/museum_tilted_6_agents_noise_1_comparison_histogram.png" 
+           alt="museum_tilted, N_A=6, f_e=1" 
+           style="width: 100%; height: auto; display: block;" />
+    </a>
+    <figcaption style="font-size: 0.85em; margin-top: 4px;">
+      museum_tilted, N<sub>A</sub>=6, f<sub>e</sub>=1
+    </figcaption>
+  </figure>
+
+</div>
+
+
+
+###################################
+## Localization error simulation results
+
+
 <div style="display: flex; justify-content: space-between; gap: 20px;">
 
   <!-- Tabela 1 -->
   <table style="font-size: 0.9em; border-collapse: collapse; width: 48%;">
     <caption style="caption-side: top; font-weight: bold; padding-bottom: 4px;">
-      Localization error simulation results.
+      
     </caption>
     <thead>
       <tr>
@@ -200,6 +234,8 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
       <tr><td>Std. dev. (σ)</td><td>0.154</td></tr>
     </tbody>
   </table>
+
+## Variable parameter combinations for experiment 1 and 2
 
   <!-- Tabela 2 -->
   <table style="font-size: 0.9em; border-collapse: collapse; width: 48%;">
@@ -225,7 +261,7 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
   </table>
 
 </div>
-#############
+
 <table style="font-size: 0.9em; border-collapse: collapse; width: 60%; margin: auto;">
   <caption style="caption-side: top; font-weight: bold; padding-bottom: 6px;">
     Variable parameter settings for experiment 2
@@ -247,7 +283,10 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
     <tr><td style="padding: 4px;">N<sub>s</sub></td><td style="padding: 4px;">30, ∞</td></tr>
   </tbody>
 </table>
-########################
+
+
+## Variable parameter combinations for experiment 3 and 4
+
 <table style="float:left; width:47%; font-size:0.9em; border-collapse:collapse; margin-right:2%;">
   <caption style="caption-side: top; font-weight: bold; padding-bottom: 4px;">
     Variable parameter combinations for experiment 3
@@ -294,12 +333,16 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
 
 <div style="clear: both;"></div>
 
-########################
 
+###################################
+## Communication impact on performance metrics
 
+<h3 style="text-align: center;">Effect of Rcomm and Ploss on F1, CPm, and ACP scores for different swarm sizes</h3>
 
+<p style="text-align: justify;">
+The table below summarizes the effect of communication range (Rcomm) and packet loss probability (Ploss) on three performance metrics: F1 score, final coverage percentage (CPm), and average coverage percentage (ACP). Results are reported for different swarm sizes and averaged across all map configurations. All experiments were conducted with fe = 0 and Tspawn = 100 to isolate the influence of communication constraints on swarm exploration and mapping performance.
+</p>
 
-#######
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -436,7 +479,12 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
 
 
 
-####
+###################################
+## Comparison of the effect of Rf on CPm and F1 score metrics across different environments
+<p style="text-align: justify;">
+The table below presents a comparative analysis of how the parameter <em>R<sub>f</sub></em> influences two key performance metrics — the final coverage percentage (<em>CP<sub>m</sub></em>) and the <em>F<sub>1</sub></em> score — across different environmental scenarios. All experiments were conducted with <em>f<sub>e</sub> = 0</em> and <em>T<sub>spawn</sub> = 0</em> to isolate the effect of <em>R<sub>f</sub></em> from other dynamic factors. The reported results reflect the mean values of each metric over repeated trials, with standard deviations ranging from 0.04 to 1.19 for <em>CP<sub>m</sub></em> and from 0.09 to 0.33 for the <em>F<sub>1</sub></em> score. These results provide insight into the sensitivity of the exploration and mapping performance to variations in <em>R<sub>f</sub></em> under controlled conditions.
+</p>
+
 <div style="width:100%; overflow:auto; border:1px solid #ccc; max-height:600px;">
   <table style="min-width:1500px; border-collapse:collapse; font-size:12px; text-align:center;">
     <thead style="background:#f7f7f7;">
@@ -489,13 +537,15 @@ To accurately simulate the localization process of each agent, we incorporate bo
 
 The following equations describe the full formulation of the estimated position model, where the offset vector $\mathbf{v}_{i,offset}$ is determined based on the heatmap data, scaling factor $f_e$, and random noise terms. These terms are drawn from Gaussian distributions with standard deviations $\sigma_p = 0.05f_e$ for positional error and $\sigma_\theta = 0.0698f_e$ radians for angular error. Together, they allow the simulation to realistically approximate sensor inaccuracies and environmental effects on localization.
 
+<div style="display: flex; justify-content: center; border:1px solid #ccc; padding:10px;">
+  <div style="width:49%; height:600px; overflow:hidden; margin:0 5px; display:flex; justify-content:center;">
+    <img src="./BICLARE_APPENDIX-3.jpg" 
+         alt="Podgląd dokumentu 1" 
+         style="object-fit: none; object-position: center -50px; max-width:none;">
+  </div>
 </div>
 
-<div style="display: flex; justify-content: center; max-height:800px; border:1px solid #ccc; padding:10px;">
-  <img src="./BICLARE_APPENDIX-3.jpg" alt="Podgląd dokumentu 1" style="max-width:49%; height:auto; image-rendering: crisp-edges; margin: 0 5px;">
-</div>
-
-
+###################################
 ## Performance Metrics Overview
 
 <div style="text-align: justify;">
