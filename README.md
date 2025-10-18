@@ -207,18 +207,14 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
 
 </div>
 
+---
 
-
-###################################
 ## Localization error simulation results
 
-
-<div style="display: flex; justify-content: space-between; gap: 20px;">
 
   <!-- Tabela 1 -->
   <table style="font-size: 0.9em; border-collapse: collapse; width: 48%;">
     <caption style="caption-side: top; font-weight: bold; padding-bottom: 4px;">
-      
     </caption>
     <thead>
       <tr>
@@ -260,7 +256,6 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
     </tbody>
   </table>
 
-</div>
 
 <table style="font-size: 0.9em; border-collapse: collapse; width: 60%; margin: auto;">
   <caption style="caption-side: top; font-weight: bold; padding-bottom: 6px;">
@@ -333,8 +328,8 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
 
 <div style="clear: both;"></div>
 
+---
 
-###################################
 ## Communication impact on performance metrics
 
 <h3 style="text-align: center;">Effect of Rcomm and Ploss on F1, CPm, and ACP scores for different swarm sizes</h3>
@@ -342,75 +337,6 @@ For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.<
 <p style="text-align: justify;">
 The table below summarizes the effect of communication range (Rcomm) and packet loss probability (Ploss) on three performance metrics: F1 score, final coverage percentage (CPm), and average coverage percentage (ACP). Results are reported for different swarm sizes and averaged across all map configurations. All experiments were conducted with fe = 0 and Tspawn = 100 to isolate the influence of communication constraints on swarm exploration and mapping performance.
 </p>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Performance Table</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #fff;
-      margin: 30px;
-      line-height: 1.4;
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .table-container {
-      max-height: 650px;
-      overflow: auto;
-      border: 1px solid #ccc;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    }
-
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      min-width: 1100px;
-      font-size: 12px;
-    }
-
-    caption {
-      caption-side: top;
-      font-weight: bold;
-      margin-bottom: 8px;
-      font-size: 14px;
-    }
-
-    th, td {
-      border: 1px solid #ccc;
-      padding: 5px 6px;
-      text-align: center;
-      white-space: nowrap;
-    }
-
-    th {
-      background-color: #f2f2f2;
-      position: sticky;
-      top: 0;
-      z-index: 2;
-    }
-
-    tr:nth-child(even) td {
-      background-color: #fafafa;
-    }
-
-    i {
-      font-style: italic;
-    }
-
-    .bold {
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
 
 <h1>Performance of Different Algorithms</h1>
 
@@ -474,12 +400,8 @@ The table below summarizes the effect of communication range (Rcomm) and packet 
 </table>
 </div>
 
-</body>
-</html>
+---
 
-
-
-###################################
 ## Comparison of the effect of Rf on CPm and F1 score metrics across different environments
 <p style="text-align: justify;">
 The table below presents a comparative analysis of how the parameter <em>R<sub>f</sub></em> influences two key performance metrics — the final coverage percentage (<em>CP<sub>m</sub></em>) and the <em>F<sub>1</sub></em> score — across different environmental scenarios. All experiments were conducted with <em>f<sub>e</sub> = 0</em> and <em>T<sub>spawn</sub> = 0</em> to isolate the effect of <em>R<sub>f</sub></em> from other dynamic factors. The reported results reflect the mean values of each metric over repeated trials, with standard deviations ranging from 0.04 to 1.19 for <em>CP<sub>m</sub></em> and from 0.09 to 0.33 for the <em>F<sub>1</sub></em> score. These results provide insight into the sensitivity of the exploration and mapping performance to variations in <em>R<sub>f</sub></em> under controlled conditions.
@@ -487,7 +409,7 @@ The table below presents a comparative analysis of how the parameter <em>R<sub>f
 
 <div style="width:100%; overflow:auto; border:1px solid #ccc; max-height:600px;">
   <table style="min-width:1500px; border-collapse:collapse; font-size:12px; text-align:center;">
-    <thead style="background:#f7f7f7;">
+    <thead>
       <tr>
         <th>N<sub>A</sub></th>
         <th>R<sub>f</sub></th>
@@ -527,10 +449,8 @@ The table below presents a comparative analysis of how the parameter <em>R<sub>f
   </table>
 </div>
 
+---
 
-
-
-###################################
 ## Position Estimation Model
 
 To accurately simulate the localization process of each agent, we incorporate both magnitude and directional components of position estimation errors into the model. Using the position estimation magnitude and direction heatmaps, denoted as $M_{mag}$ and $M_{dir}$ respectively, the estimated position $\mathbf{p}_i$ of each agent $A_i$ is computed as a function of its true position and a generated offset vector. This offset captures systematic and stochastic components of localization uncertainty, including error magnitude, direction deviation, and random noise.
@@ -545,7 +465,8 @@ The following equations describe the full formulation of the estimated position 
   </div>
 </div>
 
-###################################
+---
+
 ## Performance Metrics Overview
 
 <div style="text-align: justify;">
@@ -556,7 +477,15 @@ The following subsections present and discuss the primary performance indicators
 
 </div>
 
-<div style="display: flex; justify-content: center; max-height:800px; border:1px solid #ccc; padding:10px;">
-  <img src="./BICLARE_APPENDIX-2.jpg" alt="Podgląd dokumentu 1" style="max-width:49%; height:auto; image-rendering: crisp-edges; margin: 0 5px;">
-  <img src="./BICLARE_APPENDIX-2_2.jpg" alt="Podgląd dokumentu 2" style="max-width:49%; height:auto; image-rendering: crisp-edges; margin: 0 5px;">
-</div>
+<table>
+<tbody>
+    <tr>
+        <td>
+            <img src="./BICLARE_APPENDIX-2.jpg" alt="Podgląd dokumentu 1">
+        </td>
+        <td>
+            <img src="./BICLARE_APPENDIX-2_2.jpg" alt="Podgląd dokumentu 2">
+        </td>
+    </tr>
+</tbody>
+</table>
