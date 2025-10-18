@@ -4,7 +4,7 @@ This page presents additional companion material for ...
 
 ---
 
-## Six Virtual Environments  FIG. 5 
+## Six virtual environments
 
 <p align="center">
   <img src="experiments/maps/house_map.png" width="30%" />
@@ -18,331 +18,296 @@ This page presents additional companion material for ...
   <img src="experiments/maps/museum_tilted_map.png" width="30%" />
 </p>
 
-<p align="center"><em>Figure 5: Six virtual maps used for performance evaluation of the BICLARE algorithm.</em></p>
+<b>Figure 5.</b> Six virtual maps used for performance evaluation of the BICLARE algorithm.
 
+## Localization Error Heatmaps
 
+### Magnitude heatmaps ($M_\text{mag}$)
 
-## Six Virtual Environments  FIG. 6
-<h2>Localization Error Heatmaps</h2>
-
-<h3>Magnitude heatmaps (<i>M<sub>mag</sub></i>)</h3>
-
-<table style="width:100%; text-align:center;">
+<table>
   <tr>
     <th>House</th>
     <th>Office</th>
     <th>Museum</th>
   </tr>
   <tr>
-    <td><img src="experiments/heatmaps/error_heatmap_house.png" width="250"></td>
-     <td><img src="experiments/heatmaps/error_heatmap_office.png" width="250"></td>
-    <td><img src="experiments/heatmaps/error_heatmap_museum.png" width="250"></td>
+    <td><img src="experiments/heatmaps/error_heatmap_house.png"></td>
+     <td><img src="experiments/heatmaps/error_heatmap_office.png"></td>
+    <td><img src="experiments/heatmaps/error_heatmap_museum.png"></td>
   </tr>
 </table>
 
-<p><b>Figure 1.</b> Localization error magnitude heatmaps <i>M<sub>mag</sub></i>. 
-For all maps: μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193.</p>
+<b>Figure 6a.</b> Localization error magnitude heatmaps ($M_\text{mag}$) - for all maps: $μ = 0.226, min = 0.004, max = 1.033, σ = 0.152, median = 0.193$.
 
-<hr>
+### Direction heatmaps ($M_\text{dir}$)
 
-<h3>Direction heatmaps (<i>M<sub>dir</sub></i>)</h3>
-
-<table style="width:100%; text-align:center;">
+<table>
   <tr>
     <th>House</th>
     <th>Office</th>
     <th>Museum</th>
   </tr>
   <tr>
-    <td><img src="experiments/heatmaps/error_direction_heatmap_house.png" width="250"></td>
-    <td><img src="experiments/heatmaps/error_direction_heatmap_office.png" width="250"></td>
-    <td><img src="experiments/heatmaps/error_direction_heatmap_museum.png" width="250"></td>
+    <td><img src="experiments/heatmaps/error_direction_heatmap_house.png"></td>
+    <td><img src="experiments/heatmaps/error_direction_heatmap_office.png"></td>
+    <td><img src="experiments/heatmaps/error_direction_heatmap_museum.png"></td>
   </tr>
 </table>
 
-<p><b>Figure 2.</b> Localization error direction heatmaps <i>M<sub>dir</sub></i>.</p>
+<b>Figure 6b.</b> Localization error direction heatmaps ($M_\text{dir}$).
 
-<h3>Orientation Error Heatmaps <i>M<sub>θ</sub></i></h3>
+### Orientation Error Heatmaps ($M_θ$)
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+<table>
+  <tr>
+    <th>House</th>
+    <th>Office</th>
+    <th>Museum</th>
+  </tr>
+  <tr>
+    <td>
+        <img src="experiments/heatmaps/error_orientation_heatmap_house.png">
+    </td>
+    <td>
+        <img src="experiments/heatmaps/error_orientation_heatmap_office.png">
+    </td>
+    <td>
+        <img src="experiments/heatmaps/error_orientation_heatmap_museum.png">
+    </td>
+  </tr>
+</table>
 
-  <div style="text-align: center;">
-    <img src="experiments/heatmaps/error_orientation_heatmap_house.png" width="300" alt="House heatmap">
-    <p><b>House</b></p>
-  </div>
+<b>Figure 7.</b> Orientation error heatmaps $M_0$ for different environments.
 
-  <div style="text-align: center;">
-    <img src="experiments/heatmaps/error_orientation_heatmap_office.png" width="300" alt="Office heatmap">
-    <p><b>Office</b></p>
-  </div>
+## Dynamic Obstacles and Agent Deployment
 
-  <div style="text-align: center;">
-    <img src="experiments/heatmaps/error_orientation_heatmap_museum.png" width="300" alt="Museum heatmap">
-    <p><b>Museum</b></p>
-  </div>
+<table>
+  <tr>
+    <th>House</th>
+    <th>Office</th>
+    <th>Museum</th>
+  </tr>
+  <tr>
+    <td>
+        <img src="experiments/arenas_spawn_boxes/house_arena_with_spawn_boxes.png">
+    </td>
+    <td>
+        <img src="experiments/arenas_spawn_boxes/office_arena_with_spawn_boxes.png">
+    </td>
+    <td>
+        <img src="experiments/arenas_spawn_boxes/museum_arena_with_spawn_boxes.png">
+    </td>
+  </tr>
+</table>
 
-</div>
+<b>Figure 8.</b> Dynamic obstacles with spawn order (red) and agent deployment positions (blue) in each map.
 
-<p><b>Figure:</b> Orientation error heatmaps <i>M<sub>θ</sub></i> for different environments.</p>
+## Examples of generated maps from experiments with $f_e= 1.5$
 
+<table>
+<tbody>
+<tr>
+    <th>
+        house_tilted<br>
+        $N_A = 2$<br>
+        $T_\text{spawn} = 0$<br>  
+        $F_1 = 87.2\%$,<br>
+        $CP_m = 78.9\%$
+    </th>
+    <th>
+        office<br>
+        $N_A = 6$<br>
+        $T_\text{spawn} = 180$<br>
+        $F_1 = 88.8\%$<br>
+        $CP_m = 91.9\%$
+    </th>
+    <th>
+        museum_tilted<br>
+        $N_A = 15$<br>
+        $T_\text{spawn} = 100$<br>
+        $F_1 = 89.6\%$<br>
+        $CP_m = 99.8\%$
+    </th>
+</tr>
+<tr>
+    <td>
+        <img src="results/map_plots/quadtree_map_relayed_pipuck2_house_tilted_n_1.5_tspawn_0_2_agents_s5.csv.png">
+    </td>
+    <td>
+        <img src="results/map_plots/quadtree_map_relayed_pipuck4_office_tilted_n_1.5_st_180_6_agents_s1.csv.png">
+    </td>
+    <td>
+        <img src="results/map_plots/quadtree_map_relayed_pipuck1_museum_tilted_n_1.5_st_100_s1_15_agents.csv.png">
+    </td>
+</tr>
+</tbody>
+</table>
 
-<h3>Dynamic Obstacles and Agent Deployment</h3>
+<b>Figure 15.</b> Maps extracted from certain experiments with $f_e= 1.5$.
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+## Performance of different algorithms across all maps and swarm sizes
 
-  <div style="text-align: center;">
-    <img src="experiments/arenas_spawn_boxes/house_arena_with_spawn_boxes.png" width="280" alt="House arena">
-    <p><b>House</b></p>
-  </div>
+<table>
+<tbody>
+<tr>
+    <th>
+        house_tilted<br>
+        $N_A=15$<br>
+        $f_e=0$
+    </th>
+    <th>
+        office<br>
+        $N_A=4$<br>
+        $f_e=0$
+    </th>
+    <th>
+        museum_tilted<br>
+        $N_A=6$<br>
+        $f_e=1$
+    </th>
+</tr>
+<tr>
+    <td>
+        <img src="results/noise/alg_comp/house_tilted_15_agents_noise_0_comparison_histogram.png">
+    </td>
+    <td>
+        <img src="results/noise/alg_comp/office_4_agents_noise_0_comparison_histogram.png">
+    </td>
+    <td>
+        <img src="results/noise/alg_comp/museum_tilted_6_agents_noise_1_comparison_histogram.png">
+    </td>
+</tr>
+</tbody>
+</table>
 
-  <div style="text-align: center;">
-    <img src="experiments/arenas_spawn_boxes/office_arena_with_spawn_boxes.png" width="280" alt="Office arena">
-    <p><b>Office</b></p>
-  </div>
-
-  <div style="text-align: center;">
-    <img src="experiments/arenas_spawn_boxes/museum_arena_with_spawn_boxes.png" width="280" alt="Museum arena">
-    <p><b>Museum</b></p>
-  </div>
-
-</div>
-
-<p><b>Figure:</b> Dynamic obstacles with spawn order (red) and agent deployment positions (blue) in each map.</p>
-
-<h3>Examples of Generated Maps (for <i>f<sub>e</sub> = 1.5</i>)</h3>
-
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-
-  <div style="text-align: center; width: 30%;">
-    <img src="results/map_plots/quadtree_map_relayed_pipuck2_house_tilted_n_1.5_tspawn_0_2_agents_s5.csv.png" 
-         alt="House tilted map" style="width:100%; border:1px solid #ccc; border-radius:6px;">
-    <p><b>House_tilted</b><br>
-    <i>N<sub>A</sub>=2</i>, <i>T<sub>spawn</sub>=0</i><br>
-    F<sub>1</sub>=87.2%, CP<sub>m</sub>=78.9%</p>
-  </div>
-
-  <div style="text-align: center; width: 30%;">
-    <img src="results/map_plots/quadtree_map_relayed_pipuck4_office_tilted_n_1.5_st_180_6_agents_s1.csv.png" 
-         alt="Office map" style="width:100%; border:1px solid #ccc; border-radius:6px;">
-    <p><b>Office</b><br>
-    <i>N<sub>A</sub>=6</i>, <i>T<sub>spawn</sub>=180</i><br>
-    F<sub>1</sub>=88.8%, CP<sub>m</sub>=91.9%</p>
-  </div>
-
-  <div style="text-align: center; width: 30%;">
-    <img src="results/map_plots/quadtree_map_relayed_pipuck1_museum_tilted_n_1.5_st_100_s1_15_agents.csv.png" 
-         alt="Museum tilted map" style="width:100%; border:1px solid #ccc; border-radius:6px;">
-    <p><b>Museum_tilted</b><br>
-    <i>N<sub>A</sub>=15</i>, <i>T<sub>spawn</sub>=100</i><br>
-    F<sub>1</sub>=89.6%, CP<sub>m</sub>=99.8%</p>
-  </div>
-
-</div>
-
-<p><b>Figure:</b> Examples of generated maps from experiments with <i>f<sub>e</sub> = 1.5</i>.</p>
-
-<h3>Performance of different algorithms across all maps and swarm sizes (for <i>f<sub>e</sub> = 0</i>)</h3>
-
-<div style="display:flex; gap:12px; align-items:flex-start; justify-content:center; flex-wrap:wrap;">
-  <figure style="margin:0; text-align:center; flex:1 1 300px; max-width:33%;">
-    <a href="results/noise/alg_comp/house_tilted_15_agents_noise_0_comparison_histogram.png">
-      <img src="results/noise/alg_comp/house_tilted_15_agents_noise_0_comparison_histogram.png" alt="house_tilted, N_A=15, f_e=0" style="max-width:100%; height:auto; display:block;" />
-    </a>
-    <figcaption style="font-size:0.9em;">house_tilted, N<sub>A</sub>=15, f<sub>e</sub>=0</figcaption>
-  </figure>
-
-  <figure style="margin:0; text-align:center; flex:1 1 300px; max-width:33%;">
-    <a href="results/noise/alg_comp/office_4_agents_noise_0_comparison_histogram.png">
-      <img src="results/noise/alg_comp/office_4_agents_noise_0_comparison_histogram.png" alt="office, N_A=4, f_e=0" style="max-width:100%; height:auto; display:block;" />
-    </a>
-    <figcaption style="font-size:0.9em;">office, N<sub>A</sub>=4, f<sub>e</sub>=0</figcaption>
-  </figure>
-
-  <figure style="margin:0; text-align:center; flex:1 1 300px; max-width:33%;">
-    <a href="results/noise/alg_comp/museum_tilted_6_agents_noise_1_comparison_histogram.png">
-      <img src="results/noise/alg_comp/museum_tilted_6_agents_noise_1_comparison_histogram.png" alt="museum_tilted, N_A=6, f_e=1" style="max-width:100%; height:auto; display:block;" />
-    </a>
-    <figcaption style="font-size:0.9em;">museum_tilted, N<sub>A</sub>=6, f<sub>e</sub>=1</figcaption>
-  </figure>
-</div>
-
-
-#
-<h3>Performance of different algorithms across all maps and swarm sizes (for <i>f<sub>e</sub> = 0</i>)</h3>
-
-<div style="display: flex; justify-content: center; align-items: flex-start; gap: 10px; flex-wrap: nowrap; width: 100%;">
-
-  <figure style="margin: 0; text-align: center; width: 30%;">
-    <a href="results/noise/alg_comp/house_tilted_15_agents_noise_0_comparison_histogram.png">
-      <img src="results/noise/alg_comp/house_tilted_15_agents_noise_0_comparison_histogram.png" 
-           alt="house_tilted, N_A=15, f_e=0" 
-           style="width: 100%; height: auto; display: block;" />
-    </a>
-    <figcaption style="font-size: 0.85em; margin-top: 4px;">
-      house_tilted, N<sub>A</sub>=15, f<sub>e</sub>=0
-    </figcaption>
-  </figure>
-
-  <figure style="margin: 0; text-align: center; width: 30%;">
-    <a href="results/noise/alg_comp/office_4_agents_noise_0_comparison_histogram.png">
-      <img src="results/noise/alg_comp/office_4_agents_noise_0_comparison_histogram.png" 
-           alt="office, N_A=4, f_e=0" 
-           style="width: 100%; height: auto; display: block;" />
-    </a>
-    <figcaption style="font-size: 0.85em; margin-top: 4px;">
-      office, N<sub>A</sub>=4, f<sub>e</sub>=0
-    </figcaption>
-  </figure>
-
-  <figure style="margin: 0; text-align: center; width: 30%;">
-    <a href="results/noise/alg_comp/museum_tilted_6_agents_noise_1_comparison_histogram.png">
-      <img src="results/noise/alg_comp/museum_tilted_6_agents_noise_1_comparison_histogram.png" 
-           alt="museum_tilted, N_A=6, f_e=1" 
-           style="width: 100%; height: auto; display: block;" />
-    </a>
-    <figcaption style="font-size: 0.85em; margin-top: 4px;">
-      museum_tilted, N<sub>A</sub>=6, f<sub>e</sub>=1
-    </figcaption>
-  </figure>
-
-</div>
-
----
+<b>Figure 16.</b> Cell observation count distribution. Averaged over $T_\text{spawn}$.
 
 ## Localization error simulation results
 
-
-  <!-- Tabela 1 -->
-  <table style="font-size: 0.9em; border-collapse: collapse; width: 48%;">
-    <caption style="caption-side: top; font-weight: bold; padding-bottom: 4px;">
+  <table>
+    <caption>
+        <b>Table 1.</b> Specifications of localization error simulation.
     </caption>
     <thead>
       <tr>
-        <th style="border-bottom: 2px solid #000; text-align: left;">Metric</th>
-        <th style="border-bottom: 2px solid #000; text-align: left;">Value [m]</th>
+        <th>Metric</th>
+        <th>Value [m]</th>
       </tr>
     </thead>
     <tbody>
-      <tr><td>Min</td><td>0.004</td></tr>
-      <tr><td>Max</td><td>1.033</td></tr>
-      <tr><td>Mean (μ)</td><td>0.227</td></tr>
-      <tr><td>Median</td><td>0.193</td></tr>
-      <tr><td>Std. dev. (σ)</td><td>0.154</td></tr>
+        <tr><td>Min</td><td>$0.004$</td></tr>
+        <tr><td>Max</td><td>$1.033$</td></tr>
+        <tr><td>Mean ($μ$)</td><td>$0.227$</td></tr>
+        <tr><td>Median</td><td>$0.193$</td></tr>
+        <tr><td>Std. dev. ($σ$)</td><td>$0.154$</td></tr>
     </tbody>
   </table>
 
-## Variable parameter combinations for experiment 1 and 2
+## Variable parameter combinations for experiments
 
-  <!-- Tabela 2 -->
-  <table style="font-size: 0.9em; border-collapse: collapse; width: 48%;">
-    <caption style="caption-side: top; font-weight: bold; padding-bottom: 4px;">
-      Variable parameter combinations for experiment 1.
+  <table>
+    <caption>
+      <b>Table 2. Variable parameter combinations for experiment 1.</b> 
     </caption>
     <thead>
       <tr>
-        <th style="border-bottom: 2px solid #000; text-align: left;">Parameter</th>
-        <th style="border-bottom: 2px solid #000; text-align: left;">Values</th>
+        <th>Parameter</th>
+        <th>Values</th>
       </tr>
     </thead>
     <tbody>
-      <tr><td>R<sub>comm</sub></td><td>[∞]</td></tr>
-      <tr><td>P<sub>loss</sub></td><td>[0]</td></tr>
-      <tr><td>T<sub>φ</sub></td><td>[100]</td></tr>
-      <tr><td>T<sub>spawn</sub></td><td>[100, 180, ∞]</td></tr>
-      <tr><td>f<sub>e</sub></td><td>[0, 0.5, 1, 1.5]</td></tr>
-      <tr><td>R<sub>f</sub></td><td>[∞]</td></tr>
-      <tr><td>N<sub>f</sub></td><td>[∞]</td></tr>
-      <tr><td>N<sub>s</sub></td><td>[∞]</td></tr>
+        <tr><td>$R_\text{comm}$</td><td>$[\infty]$</td></tr>
+        <tr><td>$P_\text{loss}$</td><td>$[0]$</td></tr>
+        <tr><td>$T_\phi$</td><td>$[100]$</td></tr>
+        <tr><td>$T_\text{spawn}$</td><td>$[100,\ 180,\ \infty]$</td></tr>
+        <tr><td>$f_e$</td><td>$[0,\ 0.5,\ 1,\ 1.5]$</td></tr>
+        <tr><td>$R_f$</td><td>$[\infty]$</td></tr>
+        <tr><td>$N_f$</td><td>$[\infty]$</td></tr>
+        <tr><td>$N_s$</td><td>$[\infty]$</td></tr>
     </tbody>
   </table>
 
-
-<table style="font-size: 0.9em; border-collapse: collapse; width: 60%; margin: auto;">
-  <caption style="caption-side: top; font-weight: bold; padding-bottom: 6px;">
-    Variable parameter settings for experiment 2
+<table>
+  <caption>
+    <b>Table 3. Variable parameter combinations for experiment 2.</b> 
   </caption>
   <thead>
     <tr>
-      <th style="border-bottom: 2px solid #000; text-align: left; padding: 4px;">Parameter</th>
-      <th style="border-bottom: 2px solid #000; text-align: left; padding: 4px;">Value(s)</th>
+      <th>Parameter</th>
+      <th>Value(s)</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td style="padding: 4px;">R<sub>comm</sub></td><td style="padding: 4px;">∞</td></tr>
-    <tr><td style="padding: 4px;">P<sub>loss</sub></td><td style="padding: 4px;">0</td></tr>
-    <tr><td style="padding: 4px;">T<sub>φ</sub></td><td style="padding: 4px;">100</td></tr>
-    <tr><td style="padding: 4px;">T<sub>spawn</sub></td><td style="padding: 4px;">100, 180, ∞</td></tr>
-    <tr><td style="padding: 4px;">f<sub>e</sub></td><td style="padding: 4px;">0, 1</td></tr>
-    <tr><td style="padding: 4px;">R<sub>f</sub></td><td style="padding: 4px;">5, 15, ∞</td></tr>
-    <tr><td style="padding: 4px;">N<sub>f</sub></td><td style="padding: 4px;">20, ∞</td></tr>
-    <tr><td style="padding: 4px;">N<sub>s</sub></td><td style="padding: 4px;">30, ∞</td></tr>
+    <tr><td>$R_\text{comm}$</td><td>$[\infty]$</td></tr>
+    <tr><td>$P_\text{loss}$</td><td>$[0]$</td></tr>
+    <tr><td>$T_\phi$</td><td>$[100]$</td></tr>
+    <tr><td>$T_\text{spawn}$</td><td>$[100,\ 180,\ \infty]$</td></tr>
+    <tr><td>$f_e$</td><td>$[0,\ 1]$</td></tr>
+    <tr><td>$R_f$</td><td>$[5,\ 15,\ \infty]$</td></tr>
+    <tr><td>$N_f$</td><td>$[20,\ \infty]$</td></tr>
+    <tr><td>$N_s$</td><td>$[30,\ \infty]$</td></tr>
   </tbody>
 </table>
 
-
-## Variable parameter combinations for experiment 3 and 4
-
-<table style="float:left; width:47%; font-size:0.9em; border-collapse:collapse; margin-right:2%;">
-  <caption style="caption-side: top; font-weight: bold; padding-bottom: 4px;">
-    Variable parameter combinations for experiment 3
+<table>
+  <caption>
+    <b>Table 4. Variable parameter combinations for experiment 3.</b> 
   </caption>
   <thead>
     <tr>
-      <th style="border-bottom: 2px solid #000; text-align: left;">Parameter</th>
-      <th style="border-bottom: 2px solid #000; text-align: left;">Values</th>
+      <th>Parameter</th>
+      <th>Values</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td>R<sub>comm</sub></td><td>[∞]</td></tr>
-    <tr><td>P<sub>loss</sub></td><td>[0]</td></tr>
-    <tr><td>T<sub>φ</sub></td><td>[50, 100, 150, ∞]</td></tr>
-    <tr><td>T<sub>spawn</sub></td><td>[100, 180, ∞]</td></tr>
-    <tr><td>f<sub>e</sub></td><td>[0, 1]</td></tr>
-    <tr><td>R<sub>f</sub></td><td>[∞]</td></tr>
-    <tr><td>N<sub>f</sub></td><td>[∞]</td></tr>
-    <tr><td>N<sub>s</sub></td><td>[∞]</td></tr>
+    <tr><td>$R_\text{comm}$</td><td>$[\infty]$</td></tr>
+    <tr><td>$P_\text{loss}$</td><td>$[0]$</td></tr>
+    <tr><td>$T_\phi$</td><td>$[50,\ 100,\ 150,\ \infty]$</td></tr>
+    <tr><td>$T_\text{spawn}$</td><td>$[100,\ 180,\ \infty]$</td></tr>
+    <tr><td>$f_e$</td><td>$[0,\ 1]$</td></tr>
+    <tr><td>$R_f$</td><td>$[\infty]$</td></tr>
+    <tr><td>$N_f$</td><td>$[\infty]$</td></tr>
+    <tr><td>$N_s$</td><td>$[\infty]$</td></tr>
   </tbody>
 </table>
 
-<table style="float:left; width:47%; font-size:0.9em; border-collapse:collapse;">
-  <caption style="caption-side: top; font-weight: bold; padding-bottom: 4px;">
-    Variable parameter combinations for experiment 4
+<table>
+  <caption>
+    <b>Table 5. Variable parameter combinations for experiment 4.</b> 
   </caption>
   <thead>
     <tr>
-      <th style="border-bottom: 2px solid #000; text-align: left;">Parameter</th>
-      <th style="border-bottom: 2px solid #000; text-align: left;">Values</th>
+      <th>Parameter</th>
+      <th>Values</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td>R<sub>comm</sub></td><td>[5, 10, 15, ∞]</td></tr>
-    <tr><td>P<sub>loss</sub></td><td>[0, 0.25, 0.5]</td></tr>
-    <tr><td>T<sub>φ</sub></td><td>[100]</td></tr>
-    <tr><td>T<sub>spawn</sub></td><td>[100, 180, ∞]</td></tr>
-    <tr><td>f<sub>e</sub></td><td>[0, 1]</td></tr>
-    <tr><td>R<sub>f</sub></td><td>[∞]</td></tr>
-    <tr><td>N<sub>f</sub></td><td>[∞]</td></tr>
-    <tr><td>N<sub>s</sub></td><td>[∞]</td></tr>
+    <tr><td>$R_\text{comm}$</td><td>$[5,\ 10,\ 15,\ \infty]$</td></tr>
+    <tr><td>$P_\text{loss}$</td><td>$[0,\ 0.25,\ 0.5]$</td></tr>
+    <tr><td>$T_\phi$</td><td>$[100]$</td></tr>
+    <tr><td>$T_\text{spawn}$</td><td>$[100,\ 180,\ \infty]$</td></tr>
+    <tr><td>$f_e$</td><td>$[0,\ 1]$</td></tr>
+    <tr><td>$R_f$</td><td>$[\infty]$</td></tr>
+    <tr><td>$N_f$</td><td>$[\infty]$</td></tr>
+    <tr><td>$N_s$</td><td>$[\infty]$</td></tr>
   </tbody>
 </table>
-
-<div style="clear: both;"></div>
 
 ---
 
 ## Communication impact on performance metrics
 
-<h3 style="text-align: center;">Effect of Rcomm and Ploss on F1, CPm, and ACP scores for different swarm sizes</h3>
+### Effect of $R_\text{comm}$ and $P_\text{loss}$ on $F_1$, $CP_m$, and $ACP$ scores for different swarm sizes
 
-<p style="text-align: justify;">
-The table below summarizes the effect of communication range (Rcomm) and packet loss probability (Ploss) on three performance metrics: F1 score, final coverage percentage (CPm), and average coverage percentage (ACP). Results are reported for different swarm sizes and averaged across all map configurations. All experiments were conducted with fe = 0 and Tspawn = 100 to isolate the influence of communication constraints on swarm exploration and mapping performance.
+<p align="justify">
+    The table below summarizes the effect of communication range ($R_\text{comm}) and packet loss probability ($P_\text{loss}) on three performance metrics: $F_1$ score, final coverage percentage ($CP_m$), and average coverage percentage ($ACP$). Results are reported for different swarm sizes and averaged across all map configurations. All experiments were conducted with $f_e = 0$ and $T_\text{spawn} = 100$ to isolate the influence of communication constraints on swarm exploration and mapping performance.
 </p>
 
-<h1>Performance of Different Algorithms</h1>
+### Performance of different algorithms
 
-<div class="table-container">
+<b>Table 6.</b> Performance of different algorithms across all maps and swarm sizes, for $f_e = 0$.
+
 <table>
-  <caption>Performance across all maps and swarm sizes (f<sub>e</sub> = 0)</caption>
   <tr>
     <th>Map</th>
     <th>N<sub>A</sub></th>
@@ -398,17 +363,18 @@ The table below summarizes the effect of communication range (Rcomm) and packet 
   <tr><td><i>museum_tilted</i></td><td>10</td><td>57.32</td><td class="bold">65.91</td><td>30.01</td><td>66.06</td><td>68.27</td><td class="bold">0.1748</td><td>0.1434</td><td>0.1142</td></tr>
   <tr><td><i>museum_tilted</i></td><td>15</td><td>69.12</td><td class="bold">74.24</td><td>40.99</td><td>65.72</td><td>80.32</td><td class="bold">0.1948</td><td>0.1579</td><td>0.1360</td></tr>
 </table>
-</div>
 
 ---
 
-## Comparison of the effect of Rf on CPm and F1 score metrics across different environments
-<p style="text-align: justify;">
-The table below presents a comparative analysis of how the parameter <em>R<sub>f</sub></em> influences two key performance metrics — the final coverage percentage (<em>CP<sub>m</sub></em>) and the <em>F<sub>1</sub></em> score — across different environmental scenarios. All experiments were conducted with <em>f<sub>e</sub> = 0</em> and <em>T<sub>spawn</sub> = 0</em> to isolate the effect of <em>R<sub>f</sub></em> from other dynamic factors. The reported results reflect the mean values of each metric over repeated trials, with standard deviations ranging from 0.04 to 1.19 for <em>CP<sub>m</sub></em> and from 0.09 to 0.33 for the <em>F<sub>1</sub></em> score. These results provide insight into the sensitivity of the exploration and mapping performance to variations in <em>R<sub>f</sub></em> under controlled conditions.
+## Comparison of the effect of $R_f$ on $CP_m$ and $F_1$ score metrics across different environments
+
+<p align="justify">
+    The table below presents a comparative analysis of how the parameter $R_f$ influences two key performance metrics — the final coverage percentage ($CP_m$) and the $F_1$ score — across different environmental scenarios. All experiments were conducted with $f_e = 0$ and $T_\text{spawn} = 0$ to isolate the effect of $R_f$ from other dynamic factors. The reported results reflect the mean values of each metric over repeated trials, with standard deviations ranging from $0.04$ to $1.19$ for $CP_m$ and from $0.09$ to $0.33$ for the $F_1$ score. These results provide insight into the sensitivity of the exploration and mapping performance to variations in $R_f$ under controlled conditions.
 </p>
 
-<div style="width:100%; overflow:auto; border:1px solid #ccc; max-height:600px;">
-  <table style="min-width:1500px; border-collapse:collapse; font-size:12px; text-align:center;">
+<b>Table 7.</b> Comparison of the effect of $R_f$ on $CP_m$ and $F_1$ score metrics across different environments. $f_e = 0$ and $T_\text{spawn} = 0$. Standard deviations are between $0.04$ and $1.19$ for $CP_m$ and $0.09$ and $0.33$ for $F_1$ score.
+
+  <table>
     <thead>
       <tr>
         <th>N<sub>A</sub></th>
@@ -447,45 +413,46 @@ The table below presents a comparative analysis of how the parameter <em>R<sub>f
       <tr><td>15</td><td>15</td><td><i>museum_tilted</i></td><td>92.90</td><td>96.92</td><td>50.17</td><td>92.80</td><td>99.72</td><td>98.68</td><td>98.18</td><td>97.48</td><td>97.33</td><td>97.22</td></tr>
     </tbody>
   </table>
-</div>
 
 ---
 
 ## Position Estimation Model
 
-To accurately simulate the localization process of each agent, we incorporate both magnitude and directional components of position estimation errors into the model. Using the position estimation magnitude and direction heatmaps, denoted as $M_{mag}$ and $M_{dir}$ respectively, the estimated position $\mathbf{p}_i$ of each agent $A_i$ is computed as a function of its true position and a generated offset vector. This offset captures systematic and stochastic components of localization uncertainty, including error magnitude, direction deviation, and random noise.
+<p align="justify">
+    To accurately simulate the localization process of each agent, we incorporate both magnitude and directional components of position estimation errors into the model. Using the position estimation magnitude and direction heatmaps, denoted as $M_{mag}$ and $M_{dir}$ respectively, the estimated position $\mathbf{p}_i$ of each agent $A_i$ is computed as a function of its true position and a generated offset vector. This offset captures systematic and stochastic components of localization uncertainty, including error magnitude, direction deviation, and random noise.
+</p>
 
-The following equations describe the full formulation of the estimated position model, where the offset vector $\mathbf{v}_{i,offset}$ is determined based on the heatmap data, scaling factor $f_e$, and random noise terms. These terms are drawn from Gaussian distributions with standard deviations $\sigma_p = 0.05f_e$ for positional error and $\sigma_\theta = 0.0698f_e$ radians for angular error. Together, they allow the simulation to realistically approximate sensor inaccuracies and environmental effects on localization.
+<p align="justify">
+    The following equations describe the full formulation of the estimated position model, where the offset vector $v_{i,offset}$ is determined based on the heatmap data, scaling factor $f_e$, and random noise terms. These terms are drawn from Gaussian distributions with standard deviations $\sigma_p = 0.05f_e$ for positional error and $\sigma_\theta = 0.0698f_e$ radians for angular error. Together, they allow the simulation to realistically approximate sensor inaccuracies and environmental effects on localization.
+</p>
 
-<div style="display: flex; justify-content: center; border:1px solid #ccc; padding:10px;">
-  <div style="width:49%; height:600px; overflow:hidden; margin:0 5px; display:flex; justify-content:center;">
-    <img src="./BICLARE_APPENDIX-3.jpg" 
-         alt="Podgląd dokumentu 1" 
-         style="object-fit: none; object-position: center -50px; max-width:none;">
-  </div>
-</div>
+
+<p align="center">
+    <a href="./BICLARE_APPENDIX-3.pdf">
+        <img
+            src="./BICLARE_APPENDIX-3.jpg"
+            width="60%"
+        >
+    </a>
+</p>
 
 ---
 
 ## Performance Metrics Overview
 
-<div style="text-align: justify;">
+<p align="justify">
+    To comprehensively evaluate the performance of the proposed system, we conducted a series of controlled experiments aimed at measuring exploration efficiency, decision confidence, and mapping accuracy under various swarm configurations. Each experiment was repeated five times with different random seeds (1–5), and the average value of each metric was calculated across all repetitions to ensure statistical robustness. While the deployment position of the agents remained constant throughout all trials, their initial orientations were randomized for each run to introduce variability. Experiments were performed for swarms of different sizes ($N_A = 2, 4, 6, 10, 15$) in order to study the scalability and collective behavior of the system.
+</p>
 
-To comprehensively evaluate the performance of the proposed system, we conducted a series of controlled experiments aimed at measuring exploration efficiency, decision confidence, and mapping accuracy under various swarm configurations. Each experiment was repeated five times with different random seeds (1–5), and the average value of each metric was calculated across all repetitions to ensure statistical robustness. While the deployment position of the agents remained constant throughout all trials, their initial orientations were randomized for each run to introduce variability. Experiments were performed for swarms of different sizes ($N_A = 2, 4, 6, 10, 15$) in order to study the scalability and collective behavior of the system.
+<p align="justify">
+    The following subsections present and discuss the primary performance indicators used in our analysis. These include coverage metrics, which quantify the efficiency and extent of environment exploration; confidence metrics, which measure the certainty of decision-making across the mission timeline; and mapping accuracy metrics, which assess how faithfully the reconstructed environment reflects the ground truth. Together, these measures provide a comprehensive view of the system’s capabilities, limitations, and potential for deployment in real-world multi-agent scenarios.
+</p>
 
-The following subsections present and discuss the primary performance indicators used in our analysis. These include coverage metrics, which quantify the efficiency and extent of environment exploration; confidence metrics, which measure the certainty of decision-making across the mission timeline; and mapping accuracy metrics, which assess how faithfully the reconstructed environment reflects the ground truth. Together, these measures provide a comprehensive view of the system’s capabilities, limitations, and potential for deployment in real-world multi-agent scenarios.
-
-</div>
-
-<table>
-<tbody>
-    <tr>
-        <td>
-            <img src="./BICLARE_APPENDIX-2.jpg" alt="Podgląd dokumentu 1">
-        </td>
-        <td>
-            <img src="./BICLARE_APPENDIX-2_2.jpg" alt="Podgląd dokumentu 2">
-        </td>
-    </tr>
-</tbody>
-</table>
+<p align="center">
+    <a href="./BICLARE_APPENDIX.pdf">
+        <img src="./BICLARE_APPENDIX-2.jpg" width="45%">
+    </a>
+    <a href="./BICLARE_APPENDIX.pdf">
+        <img src="./BICLARE_APPENDIX-2_2.jpg" width="45%">
+    </a>
+</p>
