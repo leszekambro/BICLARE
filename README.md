@@ -1,6 +1,6 @@
 # BICLARE
 
-This page presents additional companion material for ...
+This page presents additional companion material for the paper titled: "BICLARE: Bio-Inspired Collaborative Lightweight Algorithm for Robust Swarm Exploration".
 
 ---
 
