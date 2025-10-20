@@ -196,7 +196,23 @@ This page presents additional companion material for the paper titled: "BICLARE:
 </table>
 
 <b>Figure 21.</b> The maximum number of leaves and nodes for maps house with NA = 10, office with NA = 15, and museum with NA = 15. fe = 1.5 and Tspawn = 100.
+## Coverage progression over time
 
+<table>
+<tbody>
+<tr>
+    <td>
+        <img src="results/coverage_plots/CLARE_wallfollowing_coverage_house_tilted_noise_0.0_spawn_time_0.png">
+    </td>
+    <td>
+        <img src="results/coverage_plots/Base_coverage_house_tilted_noise_0.0_spawn_time_0.png">
+    </td>
+</tr>
+</tbody>
+</table>
+
+<b>Figure 22.</b> P over time in house_tilted with fe = 0 and Tspawn = 0. The dotted lines indicate
+ACP.
 ## Localization error simulation results
 
   <table>
