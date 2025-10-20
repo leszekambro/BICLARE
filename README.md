@@ -181,6 +181,21 @@ This page presents additional companion material for the paper titled: "BICLARE:
 </table>
 
 <b>Figure 16.</b> Cell observation count distribution. Averaged over $T_\text{spawn}$.
+## The maximum number of leaves and nodes for maps house
+
+<table>
+  <tbody>
+    <tr>
+    </tr>
+    <tr>
+      <td>
+        <img src="results/memory/max_nodes_and_leaves_comparison.png" width="50%">
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<b>Figure 21.</b> The maximum number of leaves and nodes for maps house with NA = 10, office with NA = 15, and museum with NA = 15. fe = 1.5 and Tspawn = 100.
 
 ## Localization error simulation results
 
