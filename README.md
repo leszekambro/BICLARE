@@ -487,3 +487,16 @@ ACP.
         <img src="./BICLARE_APPENDIX-2_2.jpg" width="45%">
     </a>
 </p>
+
+---
+
+## Nomenclature
+
+<p align="center">
+    <a href="./BICLARE_APPENDIX-4.pdf">
+        <img src="./BICLARE_APPENDIX-4.jpg" width="45%">
+    </a>
+    <a href="./BICLARE_APPENDIX.pdf">
+        <img src="./BICLARE_APPENDIX-4_2.jpg" width="45%">
+    </a>
+</p>
